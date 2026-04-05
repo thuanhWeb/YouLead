@@ -19,7 +19,7 @@ export function CTASection({
 
   return (
     <section
-      className={`py-16 sm:py-20 ${
+      className={`py-16 sm:py-24 ${
         isGold
           ? "bg-gradient-to-br from-gold-dark via-gold to-gold-light text-charcoal"
           : "bg-charcoal text-warm-white"
