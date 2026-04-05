@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { CTASection } from "@/components/layout/CTASection";
 
 export const metadata: Metadata = {
@@ -18,36 +19,48 @@ const testimonials = [
       "Working with You Lead Coaching was a turning point in my career. I went from feeling overwhelmed to leading my team with clarity and purpose.",
     name: "Sarah M.",
     role: "VP of Engineering",
+    avatar:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80",
   },
   {
     quote:
       "The coaching helped me find my voice as a leader. I now approach challenges with confidence and a strategic mindset I didn't know I had.",
     name: "James T.",
     role: "Director of Operations",
+    avatar:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
   },
   {
     quote:
       "I was skeptical at first, but the results speak for themselves. My team engagement scores are up 40% and I finally feel like the leader I was meant to be.",
     name: "Priya K.",
     role: "Senior Product Manager",
+    avatar:
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80",
   },
   {
     quote:
       "The group coaching program gave me a community of peers who challenge and support me. It's been invaluable for my growth as an executive.",
     name: "Michael R.",
     role: "Chief Marketing Officer",
+    avatar:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80",
   },
   {
     quote:
       "Before coaching, I was constantly second-guessing myself. Now I make decisions with conviction and my team trusts my leadership more than ever.",
     name: "Amanda L.",
     role: "Engineering Manager",
+    avatar:
+      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&q=80",
   },
   {
     quote:
       "The leadership workshop transformed how our entire management team communicates. We're more aligned, more empathetic, and more effective.",
     name: "David C.",
     role: "CEO, Tech Startup",
+    avatar:
+      "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&q=80",
   },
 ];
 
@@ -88,13 +101,13 @@ export default function TestimonialsPage() {
                     &ldquo;{testimonial.quote}&rdquo;
                   </p>
                   <footer className="mt-6 flex items-center gap-3">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold/20 text-gold-dark">
-                      <span className="text-sm font-semibold">
-                        {testimonial.name
-                          .split(" ")
-                          .map((n) => n[0])
-                          .join("")}
-                      </span>
+                    <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-full ring-2 ring-gold/30">
+                      <Image
+                        src={testimonial.avatar}
+                        alt={`${testimonial.name} photo`}
+                        fill
+                        className="object-cover"
+                      />
                     </div>
                     <div>
                       <p className="font-semibold text-charcoal">
