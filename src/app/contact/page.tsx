@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { Metadata } from "next";
+import { CalendlyWidget } from "@/components/contact/CalendlyWidget";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { Mail, Clock, MapPin } from "lucide-react";
 
@@ -115,7 +116,9 @@ export default function ContactPage() {
                 <h3 className="font-semibold text-charcoal">Follow Along</h3>
                 <div className="mt-3 flex gap-4">
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/company/youleadcoaching"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex h-10 w-10 items-center justify-center rounded-full bg-cream text-charcoal/60 hover:bg-gold/20 hover:text-gold-dark transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2"
                     aria-label="LinkedIn"
                   >
@@ -124,7 +127,9 @@ export default function ContactPage() {
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="https://www.instagram.com/youleadcoaching"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex h-10 w-10 items-center justify-center rounded-full bg-cream text-charcoal/60 hover:bg-gold/20 hover:text-gold-dark transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2"
                     aria-label="Instagram"
                   >
@@ -149,28 +154,8 @@ export default function ContactPage() {
             Skip the form and book a complimentary 30-minute discovery call
             directly on our calendar.
           </p>
-          <div className="mt-10 rounded-2xl border border-charcoal/10 bg-white p-8 sm:p-12">
-            <div className="flex flex-col items-center justify-center gap-4 text-charcoal/50">
-              <svg
-                className="h-16 w-16"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={1.5}
-                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
-                />
-              </svg>
-              <p className="text-sm font-medium">
-                Calendly scheduling widget will appear here
-              </p>
-              <p className="text-xs text-charcoal/40">
-                Book a Discovery Call directly
-              </p>
-            </div>
+          <div className="mt-10 overflow-hidden rounded-2xl border border-charcoal/10 bg-white">
+            <CalendlyWidget />
           </div>
         </div>
       </section>
