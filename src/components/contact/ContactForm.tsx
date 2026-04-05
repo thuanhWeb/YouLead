@@ -28,6 +28,7 @@ interface FormErrors {
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [errors, setErrors] = useState<FormErrors>({});
   const [service, setService] = useState<string | null>(null);
 
@@ -49,7 +50,7 @@ export function ContactForm() {
     return errs;
   }
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
     const validationErrors = validate(formData);
@@ -60,6 +61,7 @@ export function ContactForm() {
     }
 
     setErrors({});
+    setIsSubmitting(true);
 
     // MVP: log form data to console
     console.log("Contact form submitted:", {
@@ -70,12 +72,16 @@ export function ContactForm() {
       message: formData.get("message"),
     });
 
+    // Simulate network request
+    await new Promise((resolve) => setTimeout(resolve, 800));
+
+    setIsSubmitting(false);
     setSubmitted(true);
   }
 
   if (submitted) {
     return (
-      <div className="rounded-2xl border border-gold/30 bg-cream p-8 text-center sm:p-12">
+      <div className="rounded-2xl border border-gold/30 bg-cream p-8 text-center sm:p-12 animate-fade-in-up motion-reduce:animate-none">
         <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gold/20">
           <svg
             className="h-8 w-8 text-gold-dark"
@@ -188,9 +194,36 @@ export function ContactForm() {
       <Button
         type="submit"
         size="lg"
+        disabled={isSubmitting}
         className="w-full bg-gold text-charcoal font-semibold hover:bg-gold-dark h-11 text-base"
       >
-        Send Message
+        {isSubmitting ? (
+          <>
+            <svg
+              className="size-4 animate-spin"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                className="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                strokeWidth="4"
+              />
+              <path
+                className="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+              />
+            </svg>
+            Sending...
+          </>
+        ) : (
+          "Send Message"
+        )}
       </Button>
     </form>
   );
