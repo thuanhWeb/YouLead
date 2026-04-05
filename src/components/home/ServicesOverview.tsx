@@ -62,7 +62,7 @@ export function ServicesOverview() {
                 </p>
                 <Link
                   href={service.href}
-                  className="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-gold-dark transition-colors hover:text-gold"
+                  className="mt-6 inline-flex items-center gap-1 rounded text-sm font-semibold text-gold-dark transition-colors hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2"
                 >
                   Learn More
                   <svg

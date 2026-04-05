@@ -30,7 +30,7 @@ export function Footer() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <Link href="/" className="font-heading text-xl font-bold text-gold">
+            <Link href="/" className="rounded font-heading text-xl font-bold text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-charcoal">
               You Lead Coaching
             </Link>
             <p className="mt-3 text-sm text-warm-white/70">
@@ -42,7 +42,7 @@ export function Footer() {
                   key={label}
                   href={href}
                   aria-label={label}
-                  className="rounded-md p-2 text-warm-white/60 transition-colors hover:text-gold"
+                  className="rounded-md p-2 text-warm-white/60 transition-colors hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-charcoal"
                 >
                   <Icon className="size-5" />
                 </a>
@@ -60,7 +60,7 @@ export function Footer() {
                 <li key={label}>
                   <Link
                     href={href}
-                    className="text-sm text-warm-white/70 transition-colors hover:text-gold"
+                    className="rounded text-sm text-warm-white/70 transition-colors hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-charcoal"
                   >
                     {label}
                   </Link>
@@ -79,7 +79,7 @@ export function Footer() {
                 <li key={label}>
                   <Link
                     href={href}
-                    className="text-sm text-warm-white/70 transition-colors hover:text-gold"
+                    className="rounded text-sm text-warm-white/70 transition-colors hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-charcoal"
                   >
                     {label}
                   </Link>
@@ -108,7 +108,7 @@ export function Footer() {
               />
               <button
                 type="submit"
-                className="rounded-md bg-gold px-4 py-2 text-sm font-medium text-charcoal transition-colors hover:bg-gold-light"
+                className="rounded-md bg-gold px-4 py-2 text-sm font-medium text-charcoal transition-colors hover:bg-gold-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-charcoal"
               >
                 Subscribe
               </button>

@@ -39,10 +39,10 @@ export function CTASection({
         <div className="mt-8">
           <Link
             href={buttonHref}
-            className={`inline-block rounded-lg px-8 py-3 text-base font-semibold transition-colors ${
+            className={`inline-block rounded-lg px-8 py-3 text-base font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 ${
               isGold
-                ? "bg-charcoal text-gold hover:bg-charcoal/90"
-                : "bg-gold text-charcoal hover:bg-gold-light"
+                ? "bg-charcoal text-gold hover:bg-charcoal/80"
+                : "bg-gold text-charcoal hover:bg-gold-dark"
             }`}
           >
             {buttonText}
