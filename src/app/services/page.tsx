@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ServiceCard } from "@/components/services/ServiceCard";
 import { FAQ } from "@/components/services/FAQ";
 import { CTASection } from "@/components/layout/CTASection";
+import { SectionDivider } from "@/components/ui/section-divider";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -99,7 +100,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-cream py-24 sm:py-32">
+      <section className="bg-cream bg-pattern-dots py-24 sm:py-32">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
           <h1 className="font-heading text-4xl font-bold text-charcoal sm:text-5xl lg:text-6xl">
             Coaching Services
@@ -112,8 +113,11 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Divider: Hero → Service Cards */}
+      <SectionDivider variant="curve" from="cream" to="warm-white" />
+
       {/* Service Cards */}
-      <section className="py-16 sm:py-24">
+      <section className="bg-radial-gold-tr py-16 sm:py-24">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-8 md:grid-cols-3">
             {services.map((service, index) => (
@@ -123,8 +127,11 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Divider: Service Cards → Process */}
+      <SectionDivider variant="wave" from="warm-white" to="cream" />
+
       {/* Process Overview */}
-      <section className="bg-cream py-16 sm:py-24">
+      <section className="bg-cream bg-pattern-dots-glow py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-center font-heading text-3xl font-bold text-charcoal sm:text-4xl">
             What to Expect
@@ -151,8 +158,11 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Divider: Process → FAQ */}
+      <SectionDivider variant="curve" from="cream" to="warm-white" />
+
       {/* FAQ */}
-      <section className="py-16 sm:py-24">
+      <section className="bg-radial-gold-bl py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-center font-heading text-3xl font-bold text-charcoal sm:text-4xl">
             Frequently Asked Questions

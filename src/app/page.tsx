@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FadeIn } from "@/components/ui/fade-in";
+import { SectionDivider } from "@/components/ui/section-divider";
 import { ValueProps } from "@/components/home/ValueProps";
 import { ServicesOverview } from "@/components/home/ServicesOverview";
 import { TestimonialsCarousel } from "@/components/home/TestimonialsCarousel";
@@ -43,22 +44,34 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Divider: Hero → Value Props */}
+      <SectionDivider variant="wave" from="charcoal" to="cream" />
+
       {/* Value Propositions */}
       <FadeIn>
         <ValueProps />
       </FadeIn>
+
+      {/* Divider: Value Props → Services */}
+      <SectionDivider variant="curve" from="cream" to="warm-white" />
 
       {/* Services Overview */}
       <FadeIn>
         <ServicesOverview />
       </FadeIn>
 
+      {/* Divider: Services → Testimonials */}
+      <SectionDivider variant="wave" from="warm-white" to="charcoal" />
+
       {/* Testimonials */}
       <TestimonialsCarousel />
 
+      {/* Divider: Testimonials → About Teaser */}
+      <SectionDivider variant="curve" from="charcoal" to="warm-white" />
+
       {/* About Teaser */}
       <FadeIn>
-      <section className="py-16 sm:py-24">
+      <section className="bg-radial-gold-bl py-16 sm:py-24">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 md:grid-cols-2">
             {/* Coach photo */}

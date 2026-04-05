@@ -146,3 +146,62 @@
     font-family: var(--font-heading);
   }
 }
+
+/* Subtle background pattern utilities */
+@layer utilities {
+  /* Dot pattern — works on light backgrounds (cream, white) */
+  .bg-pattern-dots {
+    background-image: radial-gradient(
+      circle,
+      oklch(0.735 0.146 84.3 / 0.07) 1px,
+      transparent 1px
+    );
+    background-size: 24px 24px;
+  }
+
+  /* Dot pattern — for dark backgrounds (charcoal) */
+  .bg-pattern-dots-light {
+    background-image: radial-gradient(
+      circle,
+      oklch(0.984 0.007 106.8 / 0.04) 1px,
+      transparent 1px
+    );
+    background-size: 24px 24px;
+  }
+
+  /* Soft radial glow accent — gold tinted, positioned top-right */
+  .bg-radial-gold-tr {
+    background-image: radial-gradient(
+      ellipse 60% 50% at 85% 20%,
+      oklch(0.735 0.146 84.3 / 0.06),
+      transparent
+    );
+  }
+
+  /* Soft radial glow accent — gold tinted, positioned bottom-left */
+  .bg-radial-gold-bl {
+    background-image: radial-gradient(
+      ellipse 50% 60% at 15% 80%,
+      oklch(0.735 0.146 84.3 / 0.06),
+      transparent
+    );
+  }
+
+  /* Combined: dots + radial glow */
+  .bg-pattern-dots-glow {
+    background-image:
+      radial-gradient(
+        ellipse 60% 50% at 85% 20%,
+        oklch(0.735 0.146 84.3 / 0.06),
+        transparent
+      ),
+      radial-gradient(
+        circle,
+        oklch(0.735 0.146 84.3 / 0.07) 1px,
+        transparent 1px
+      );
+    background-size:
+      100% 100%,
+      24px 24px;
+  }
+}

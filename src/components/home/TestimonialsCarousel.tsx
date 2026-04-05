@@ -50,7 +50,7 @@ export function TestimonialsCarousel() {
 
   return (
     <section
-      className="bg-charcoal py-16 sm:py-24"
+      className="bg-charcoal bg-pattern-dots-light py-16 sm:py-24"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
