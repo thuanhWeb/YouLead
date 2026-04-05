@@ -47,7 +47,7 @@ export function ServiceCard({
         <p className="text-lg font-semibold text-charcoal">{pricing}</p>
         <Link
           href={ctaHref}
-          className="mt-4 inline-block w-full rounded-lg bg-gold px-6 py-3 text-center font-semibold text-charcoal transition-colors hover:bg-gold-light"
+          className="mt-4 inline-block w-full rounded-lg bg-gold px-6 py-3 text-center font-semibold text-charcoal transition-colors hover:bg-gold-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2"
         >
           {ctaText}
         </Link>

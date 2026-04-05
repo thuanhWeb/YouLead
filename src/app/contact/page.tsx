@@ -66,7 +66,7 @@ export default function ContactPage() {
                     <h3 className="font-semibold text-charcoal">Email</h3>
                     <a
                       href="mailto:hello@youleadcoaching.com"
-                      className="mt-1 text-charcoal/70 hover:text-gold-dark transition-colors"
+                      className="mt-1 rounded text-charcoal/70 hover:text-gold-dark transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2"
                     >
                       hello@youleadcoaching.com
                     </a>
@@ -104,7 +104,7 @@ export default function ContactPage() {
                 <div className="mt-3 flex gap-4">
                   <a
                     href="#"
-                    className="flex h-10 w-10 items-center justify-center rounded-full bg-cream text-charcoal/60 hover:bg-gold/20 hover:text-gold-dark transition-colors"
+                    className="flex h-10 w-10 items-center justify-center rounded-full bg-cream text-charcoal/60 hover:bg-gold/20 hover:text-gold-dark transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2"
                     aria-label="LinkedIn"
                   >
                     <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
@@ -113,7 +113,7 @@ export default function ContactPage() {
                   </a>
                   <a
                     href="#"
-                    className="flex h-10 w-10 items-center justify-center rounded-full bg-cream text-charcoal/60 hover:bg-gold/20 hover:text-gold-dark transition-colors"
+                    className="flex h-10 w-10 items-center justify-center rounded-full bg-cream text-charcoal/60 hover:bg-gold/20 hover:text-gold-dark transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2"
                     aria-label="Instagram"
                   >
                     <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">

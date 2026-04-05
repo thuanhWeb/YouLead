@@ -19,13 +19,13 @@ export default function Home() {
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link
               href="/contact"
-              className="inline-block rounded-lg bg-gold px-8 py-3 text-base font-semibold text-charcoal transition-colors hover:bg-gold-light"
+              className="inline-block rounded-lg bg-gold px-8 py-3 text-base font-semibold text-charcoal transition-colors hover:bg-gold-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2"
             >
               Book a Discovery Call
             </Link>
             <Link
               href="/about"
-              className="inline-block rounded-lg border border-charcoal/20 px-8 py-3 text-base font-semibold text-charcoal transition-colors hover:bg-charcoal/5"
+              className="inline-block rounded-lg border border-charcoal/20 px-8 py-3 text-base font-semibold text-charcoal transition-colors hover:bg-gold/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2"
             >
               Learn More
             </Link>
@@ -82,7 +82,7 @@ export default function Home() {
               </p>
               <Link
                 href="/about"
-                className="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-gold-dark transition-colors hover:text-gold"
+                className="mt-6 inline-flex items-center gap-1 rounded text-sm font-semibold text-gold-dark transition-colors hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2"
               >
                 Read My Story
                 <svg

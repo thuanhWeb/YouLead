@@ -10,6 +10,7 @@
   --font-sans: var(--font-sans);
   --font-heading: var(--font-heading);
   --font-mono: var(--font-geist-mono);
+  /* Brand colors — hex equivalents: gold=#D4A017, charcoal=#1C1C1C, warm-white=#FAFAF5, cream=#FDF6E3 */
   --color-gold: oklch(0.735 0.146 84.3);
   --color-gold-light: oklch(0.82 0.1 84.3);
   --color-gold-dark: oklch(0.6 0.146 84.3);

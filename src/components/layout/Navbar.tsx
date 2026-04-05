@@ -59,7 +59,7 @@ export function Navbar() {
               <li key={href}>
                 <Link
                   href={href}
-                  className={`rounded-md px-3 py-2 text-sm font-medium transition-colors ${
+                  className={`rounded-md px-3 py-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 ${
                     active
                       ? "text-gold"
                       : "text-foreground/80 hover:text-gold"
@@ -106,7 +106,7 @@ export function Navbar() {
                       render={
                         <Link
                           href={href}
-                          className={`rounded-md px-3 py-2.5 text-base font-medium transition-colors ${
+                          className={`rounded-md px-3 py-2.5 text-base font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 ${
                             active
                               ? "bg-primary/10 text-gold"
                               : "text-foreground/80 hover:text-gold"
