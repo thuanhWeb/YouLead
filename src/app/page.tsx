@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import { FadeIn } from "@/components/ui/fade-in";
 import { ValueProps } from "@/components/home/ValueProps";
 import { ServicesOverview } from "@/components/home/ServicesOverview";
 import { TestimonialsCarousel } from "@/components/home/TestimonialsCarousel";
@@ -8,12 +10,20 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-gold-dark/10 via-gold/5 to-cream py-24 sm:py-32">
-        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
-          <h1 className="font-heading text-4xl font-bold text-charcoal sm:text-5xl lg:text-6xl">
+      <section className="relative overflow-hidden py-24 sm:py-32">
+        <Image
+          src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1920&q=80"
+          alt="Professional team collaborating in a modern office"
+          fill
+          priority
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-charcoal/70 via-charcoal/50 to-gold-dark/30" />
+        <div className="relative mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
+          <h1 className="font-heading text-4xl font-bold text-warm-white sm:text-5xl lg:text-6xl">
             Transform Your Leadership Journey
           </h1>
-          <p className="mt-6 text-lg text-charcoal/70 sm:text-xl">
+          <p className="mt-6 text-lg text-warm-white/80 sm:text-xl">
             Executive coaching for leaders ready to unlock their full potential
           </p>
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
@@ -25,7 +35,7 @@ export default function Home() {
             </Link>
             <Link
               href="/about"
-              className="inline-block rounded-lg border border-charcoal/20 px-8 py-3 text-base font-semibold text-charcoal transition-colors hover:bg-charcoal/5"
+              className="inline-block rounded-lg border border-warm-white/40 bg-warm-white/10 px-8 py-3 text-base font-semibold text-warm-white backdrop-blur-sm transition-colors hover:bg-warm-white/20"
             >
               Learn More
             </Link>
@@ -34,34 +44,32 @@ export default function Home() {
       </section>
 
       {/* Value Propositions */}
-      <ValueProps />
+      <FadeIn>
+        <ValueProps />
+      </FadeIn>
 
       {/* Services Overview */}
-      <ServicesOverview />
+      <FadeIn>
+        <ServicesOverview />
+      </FadeIn>
 
       {/* Testimonials */}
       <TestimonialsCarousel />
 
       {/* About Teaser */}
+      <FadeIn>
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 md:grid-cols-2">
-            {/* Photo placeholder */}
+            {/* Coach photo */}
             <div className="flex items-center justify-center">
-              <div className="flex h-72 w-72 items-center justify-center rounded-2xl bg-cream text-charcoal/40 sm:h-80 sm:w-80">
-                <svg
-                  className="h-20 w-20"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
-                  />
-                </svg>
+              <div className="relative h-72 w-72 overflow-hidden rounded-2xl sm:h-80 sm:w-80">
+                <Image
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80"
+                  alt="Professional executive coach in a modern office setting"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
 
@@ -103,6 +111,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      </FadeIn>
 
       {/* CTA Banner */}
       <CTASection

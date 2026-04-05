@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import { CTASection } from "@/components/layout/CTASection";
 
@@ -32,22 +33,16 @@ export default function AboutPage() {
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 md:grid-cols-2">
-            {/* Photo placeholder */}
+            {/* Coach photo */}
             <div className="flex items-center justify-center">
-              <div className="flex h-80 w-80 items-center justify-center rounded-2xl bg-cream text-charcoal/40 sm:h-96 sm:w-96">
-                <svg
-                  className="h-24 w-24"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
-                  />
-                </svg>
+              <div className="relative h-80 w-80 overflow-hidden rounded-2xl sm:h-96 sm:w-96">
+                <Image
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80"
+                  alt="Professional executive coach in a modern office setting"
+                  fill
+                  priority
+                  className="object-cover"
+                />
               </div>
             </div>
 
@@ -127,24 +122,32 @@ export default function AboutPage() {
                 title: "A passion for people",
                 description:
                   "It started with a simple observation: talented professionals were struggling not because they lacked skill, but because they lacked support. The seed for You Lead Coaching was planted.",
+                image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&q=80",
+                imageAlt: "Professionals having an inspiring conversation",
               },
               {
                 label: "The Training",
                 title: "Deepening the craft",
                 description:
                   "Years of rigorous training in executive coaching methodologies, positive psychology, and organizational behavior followed — along with ICF certification and hundreds of coaching hours.",
+                image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&q=80",
+                imageAlt: "Study materials and certification preparation",
               },
               {
                 label: "The Launch",
                 title: "You Lead Coaching is born",
                 description:
                   "What began as one-on-one sessions grew into a full coaching practice offering executive coaching, group programs, and leadership workshops for teams and organizations.",
+                image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&q=80",
+                imageAlt: "Launching a new coaching business",
               },
               {
                 label: "Today",
                 title: "Growing impact",
                 description:
                   "Today, You Lead Coaching serves leaders at every stage — from first-time managers finding their voice to seasoned executives navigating their next chapter. The mission remains the same: help you lead.",
+                image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&q=80",
+                imageAlt: "Diverse team of leaders collaborating",
               },
             ].map((milestone, index) => (
               <div key={index} className="flex gap-6 sm:gap-8">
@@ -156,7 +159,7 @@ export default function AboutPage() {
                     <div className="mt-2 h-full w-px bg-gold/30" />
                   )}
                 </div>
-                <div className="pb-2">
+                <div className="flex-1 pb-2">
                   <span className="text-sm font-semibold uppercase tracking-wider text-gold-dark">
                     {milestone.label}
                   </span>
@@ -166,6 +169,14 @@ export default function AboutPage() {
                   <p className="mt-2 leading-relaxed text-charcoal/80">
                     {milestone.description}
                   </p>
+                  <div className="relative mt-4 h-40 w-full overflow-hidden rounded-xl sm:h-48">
+                    <Image
+                      src={milestone.image}
+                      alt={milestone.imageAlt}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
                 </div>
               </div>
             ))}

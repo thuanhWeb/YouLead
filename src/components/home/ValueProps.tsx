@@ -82,7 +82,7 @@ export function ValueProps() {
           {pillars.map((pillar) => (
             <div
               key={pillar.title}
-              className="rounded-2xl bg-white p-8 shadow-sm transition-shadow hover:shadow-md"
+              className="rounded-2xl bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
             >
               <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-gold/10">
                 {pillar.icon}

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 interface ServiceCardProps {
@@ -7,6 +8,8 @@ interface ServiceCardProps {
   pricing: string;
   ctaText: string;
   ctaHref: string;
+  image?: string;
+  imageAlt?: string;
 }
 
 export function ServiceCard({
@@ -16,9 +19,22 @@ export function ServiceCard({
   pricing,
   ctaText,
   ctaHref,
+  image,
+  imageAlt,
 }: ServiceCardProps) {
   return (
-    <div className="flex flex-col rounded-2xl border border-charcoal/10 bg-white p-8 shadow-sm transition-shadow hover:shadow-md">
+    <div className="group flex flex-col overflow-hidden rounded-2xl border border-charcoal/10 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+      {image && (
+        <div className="relative h-48 overflow-hidden">
+          <Image
+            src={image}
+            alt={imageAlt || title}
+            fill
+            className="object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
+      )}
+      <div className="flex flex-1 flex-col p-8">
       <h3 className="font-heading text-2xl font-bold text-charcoal">{title}</h3>
       <p className="mt-3 leading-relaxed text-charcoal/70">{description}</p>
 
@@ -51,6 +67,7 @@ export function ServiceCard({
         >
           {ctaText}
         </Link>
+      </div>
       </div>
     </div>
   );

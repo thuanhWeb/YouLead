@@ -29,6 +29,8 @@ const services = [
     pricing: "Contact for Pricing",
     ctaText: "Book a Discovery Call",
     ctaHref: "/contact",
+    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80",
+    imageAlt: "Professional executive coaching session",
   },
   {
     title: "Group Coaching",
@@ -44,6 +46,8 @@ const services = [
     pricing: "Contact for Pricing",
     ctaText: "Learn More",
     ctaHref: "/contact",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80",
+    imageAlt: "Small group of professionals in a collaborative session",
   },
   {
     title: "Leadership Workshops",
@@ -59,6 +63,8 @@ const services = [
     pricing: "Contact for Pricing",
     ctaText: "Request a Workshop",
     ctaHref: "/contact",
+    image: "https://images.unsplash.com/photo-1531498860502-7c67cf02f657?w=800&q=80",
+    imageAlt: "Interactive leadership workshop with engaged participants",
   },
 ];
 
