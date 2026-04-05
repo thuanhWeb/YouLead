@@ -21,8 +21,8 @@ export function CTASection({
     <section
       className={`py-16 sm:py-20 ${
         isGold
-          ? "bg-gradient-to-br from-gold-dark via-gold to-gold-light text-charcoal"
-          : "bg-charcoal text-warm-white"
+          ? "bg-cream text-charcoal"
+          : "bg-forest text-warm-white"
       }`}
     >
       <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
@@ -31,7 +31,7 @@ export function CTASection({
         </h2>
         <p
           className={`mt-4 text-lg ${
-            isGold ? "text-charcoal/80" : "text-warm-white/70"
+            isGold ? "text-charcoal/70" : "text-warm-white/70"
           }`}
         >
           {description}
@@ -39,11 +39,7 @@ export function CTASection({
         <div className="mt-8">
           <Link
             href={buttonHref}
-            className={`inline-block rounded-lg px-8 py-3 text-base font-semibold transition-colors ${
-              isGold
-                ? "bg-charcoal text-gold hover:bg-charcoal/90"
-                : "bg-gold text-charcoal hover:bg-gold-light"
-            }`}
+            className="inline-block rounded-lg bg-gold px-8 py-3 text-base font-semibold text-forest-dark transition-colors hover:bg-gold-light"
           >
             {buttonText}
           </Link>

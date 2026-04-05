@@ -25,7 +25,7 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="border-t bg-charcoal text-warm-white">
+    <footer className="border-t border-forest-light/20 bg-forest-dark text-warm-white">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
@@ -34,7 +34,7 @@ export function Footer() {
               You Lead Coaching
             </Link>
             <p className="mt-3 text-sm text-warm-white/70">
-              Transform your leadership with clarity, confidence, and growth.
+              Lead with clarity, grow in alignment, thrive with confidence.
             </p>
             <div className="mt-4 flex gap-3">
               {socialLinks.map(({ href, label, icon: Icon }) => (
@@ -108,7 +108,7 @@ export function Footer() {
               />
               <button
                 type="submit"
-                className="rounded-md bg-gold px-4 py-2 text-sm font-medium text-charcoal transition-colors hover:bg-gold-light"
+                className="rounded-md bg-gold px-4 py-2 text-sm font-medium text-forest-dark transition-colors hover:bg-gold-light"
               >
                 Subscribe
               </button>
