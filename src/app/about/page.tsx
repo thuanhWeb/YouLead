@@ -33,22 +33,16 @@ export default function AboutPage() {
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 md:grid-cols-2">
-            {/* Photo placeholder */}
+            {/* Coach photo */}
             <div className="flex items-center justify-center">
-              <div className="flex h-80 w-80 items-center justify-center rounded-2xl bg-cream text-charcoal/40 sm:h-96 sm:w-96">
-                <svg
-                  className="h-24 w-24"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
-                  />
-                </svg>
+              <div className="relative h-80 w-80 overflow-hidden rounded-2xl sm:h-96 sm:w-96">
+                <Image
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80"
+                  alt="Professional executive coach in a modern office setting"
+                  fill
+                  priority
+                  className="object-cover"
+                />
               </div>
             </div>
 

@@ -175,16 +175,25 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Map / Location Placeholder */}
+      {/* Global Reach */}
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
-          <div className="overflow-hidden rounded-2xl border border-charcoal/10 bg-cream">
-            <div className="flex h-64 items-center justify-center text-charcoal/40">
-              <div className="text-center">
-                <MapPin className="mx-auto h-10 w-10" />
-                <p className="mt-3 text-sm font-medium">
-                  Virtual coaching — available worldwide
-                </p>
+          <div className="relative overflow-hidden rounded-2xl border border-charcoal/10">
+            <div className="relative h-64">
+              <Image
+                src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=1200&q=80"
+                alt="Global connectivity representing virtual coaching available worldwide"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-charcoal/50" />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="text-center">
+                  <MapPin className="mx-auto h-10 w-10 text-gold" />
+                  <p className="mt-3 text-sm font-medium text-warm-white">
+                    Virtual coaching — available worldwide
+                  </p>
+                </div>
               </div>
             </div>
           </div>
