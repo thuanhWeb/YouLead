@@ -69,7 +69,7 @@ const pillars = [
 
 export function ValueProps() {
   return (
-    <section className="bg-cream py-16 sm:py-20">
+    <section className="bg-cream py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-center font-heading text-3xl font-bold text-charcoal sm:text-4xl">
           The Foundation of Exceptional Leadership

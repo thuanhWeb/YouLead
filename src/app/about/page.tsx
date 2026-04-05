@@ -17,7 +17,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-cream py-20 sm:py-28">
+      <section className="bg-cream py-24 sm:py-32">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
           <h1 className="font-heading text-4xl font-bold text-charcoal sm:text-5xl lg:text-6xl">
             About You Lead Coaching
@@ -30,7 +30,7 @@ export default function AboutPage() {
       </section>
 
       {/* Coach Bio */}
-      <section className="py-16 sm:py-20">
+      <section className="py-16 sm:py-24">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 md:grid-cols-2">
             {/* Coach photo */}
@@ -79,7 +79,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission / Vision */}
-      <section className="bg-cream py-16 sm:py-20">
+      <section className="bg-cream py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="rounded-2xl border-l-4 border-gold bg-white p-8 shadow-sm sm:p-12">
             <h2 className="font-heading text-3xl font-bold text-charcoal sm:text-4xl">
@@ -106,7 +106,7 @@ export default function AboutPage() {
       </section>
 
       {/* Journey / Story Timeline */}
-      <section className="py-16 sm:py-20">
+      <section className="py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-center font-heading text-3xl font-bold text-charcoal sm:text-4xl">
             The Journey
