@@ -116,10 +116,27 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Copyright */}
+        {/* Copyright & Legal */}
         <div className="mt-10 border-t border-warm-white/10 pt-6 text-center text-sm text-warm-white/50">
-          &copy; {new Date().getFullYear()} You Lead Coaching. All rights
-          reserved.
+          <p>
+            &copy; {new Date().getFullYear()} You Lead Coaching. All rights
+            reserved.
+          </p>
+          <div className="mt-2 flex justify-center gap-4">
+            <Link
+              href="/privacy"
+              className="transition-colors hover:text-gold"
+            >
+              Privacy Policy
+            </Link>
+            <span aria-hidden="true">&middot;</span>
+            <Link
+              href="/terms"
+              className="transition-colors hover:text-gold"
+            >
+              Terms of Service
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

@@ -41,7 +41,7 @@ export function ServicesOverview() {
 
         <div className="mt-12 grid gap-8 md:grid-cols-3">
           {services.map((service) => (
-            <div
+            <article
               key={service.title}
               className="group flex flex-col overflow-hidden rounded-2xl border border-charcoal/10 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
             >
@@ -80,7 +80,7 @@ export function ServicesOverview() {
                   </svg>
                 </Link>
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>

@@ -80,7 +80,7 @@ export function ValueProps() {
 
         <div className="mt-12 grid gap-8 sm:grid-cols-3">
           {pillars.map((pillar) => (
-            <div
+            <article
               key={pillar.title}
               className="rounded-2xl bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
             >
@@ -93,7 +93,7 @@ export function ValueProps() {
               <p className="mt-3 leading-relaxed text-charcoal/70">
                 {pillar.description}
               </p>
-            </div>
+            </article>
           ))}
         </div>
       </div>
