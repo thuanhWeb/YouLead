@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { Mail, Clock, MapPin } from "lucide-react";
@@ -28,6 +29,17 @@ export default function ContactPage() {
             directly.
           </p>
         </div>
+      </section>
+
+      {/* Contact Image Banner */}
+      <section className="relative h-48 sm:h-64 overflow-hidden">
+        <Image
+          src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80"
+          alt="Warm, inviting workspace for coaching conversations"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-cream/80 to-transparent" />
       </section>
 
       {/* Contact Form + Info */}

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import { CTASection } from "@/components/layout/CTASection";
 
@@ -127,24 +128,32 @@ export default function AboutPage() {
                 title: "A passion for people",
                 description:
                   "It started with a simple observation: talented professionals were struggling not because they lacked skill, but because they lacked support. The seed for You Lead Coaching was planted.",
+                image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&q=80",
+                imageAlt: "Professionals having an inspiring conversation",
               },
               {
                 label: "The Training",
                 title: "Deepening the craft",
                 description:
                   "Years of rigorous training in executive coaching methodologies, positive psychology, and organizational behavior followed — along with ICF certification and hundreds of coaching hours.",
+                image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&q=80",
+                imageAlt: "Study materials and certification preparation",
               },
               {
                 label: "The Launch",
                 title: "You Lead Coaching is born",
                 description:
                   "What began as one-on-one sessions grew into a full coaching practice offering executive coaching, group programs, and leadership workshops for teams and organizations.",
+                image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&q=80",
+                imageAlt: "Launching a new coaching business",
               },
               {
                 label: "Today",
                 title: "Growing impact",
                 description:
                   "Today, You Lead Coaching serves leaders at every stage — from first-time managers finding their voice to seasoned executives navigating their next chapter. The mission remains the same: help you lead.",
+                image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&q=80",
+                imageAlt: "Diverse team of leaders collaborating",
               },
             ].map((milestone, index) => (
               <div key={index} className="flex gap-6 sm:gap-8">
@@ -156,7 +165,7 @@ export default function AboutPage() {
                     <div className="mt-2 h-full w-px bg-gold/30" />
                   )}
                 </div>
-                <div className="pb-2">
+                <div className="flex-1 pb-2">
                   <span className="text-sm font-semibold uppercase tracking-wider text-gold-dark">
                     {milestone.label}
                   </span>
@@ -166,6 +175,14 @@ export default function AboutPage() {
                   <p className="mt-2 leading-relaxed text-charcoal/80">
                     {milestone.description}
                   </p>
+                  <div className="relative mt-4 h-40 w-full overflow-hidden rounded-xl sm:h-48">
+                    <Image
+                      src={milestone.image}
+                      alt={milestone.imageAlt}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
                 </div>
               </div>
             ))}
