@@ -16,7 +16,7 @@ import {
 const navLinks = [
   { href: "#about", label: "About" },
   { href: "#services", label: "Work With Me" },
-  { href: "#testimonials", label: "Testimonials" },
+  { href: "#", label: "Resources" },
   { href: "#contact", label: "Contact" },
 ] as const;
 
@@ -67,10 +67,8 @@ export function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-40 w-full transition-colors duration-300 ${
-        scrolled
-          ? "bg-background/95 shadow-sm backdrop-blur-sm"
-          : "bg-transparent"
+      className={`sticky top-0 z-40 w-full bg-white transition-shadow duration-300 ${
+        scrolled ? "shadow-sm" : ""
       }`}
     >
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
@@ -125,7 +123,7 @@ export function Navbar() {
               />
             }
           >
-            Book a Call
+            Book a Clarity Call
           </Button>
         </div>
 
@@ -182,7 +180,7 @@ export function Navbar() {
                       />
                     }
                   >
-                    <Button className="w-full">Book a Call</Button>
+                    <Button className="w-full">Book a Clarity Call</Button>
                   </SheetClose>
                 </div>
               </nav>
