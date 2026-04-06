@@ -1,0 +1,235 @@
+﻿Perfect. Here’s your **v1 website draft** (simple, Bloom-style, one page + blog).
+
+
+## 1) One-page structure (Homepage)
+
+
+1. Hero
+2. Trust/Credibility strip
+3. Who I help
+4. Services (3 offers)
+5. My coaching approach
+6. Results / testimonials
+7. About TA
+8. FAQ
+9. Final CTA
+10. Footer
+
+
+---
+
+
+## 2) Homepage copy draft (ready to paste)
+
+
+### HERO
+**Headline:**
+Clarity, alignment, and momentum for leaders who want to thrive their way.
+
+
+**Subheadline:**
+I coach founders, leaders, and purpose-driven professionals to lead with confidence, make aligned decisions, and build success that actually feels good.
+
+
+**Primary CTA:**
+Book a Clarity Call
+
+
+**Secondary CTA:**
+Explore Coaching
+
+
+---
+
+
+### TRUST STRIP
+Trusted by growth-minded leaders, founders, and professionals navigating change, growth, and reinvention.
+
+
+(Optional logos later)
+
+
+---
+
+
+### WHO I HELP
+**Title:**
+Who this is for
+
+
+**Copy:**
+You’re capable, committed, and ambitious, but you may feel stretched, unclear, or out of alignment with what matters most.
+
+
+I work with people who are:
+- Stepping into bigger leadership
+- Building or scaling a business
+- Navigating transitions and wanting clear direction
+- Ready to grow without burning out or losing themselves
+
+
+---
+
+
+### SERVICES
+**Title:**
+How we can work together
+
+
+**1: 1:1 Coaching**
+Personalised coaching to help you gain clarity, make confident decisions, and move forward with purpose.
+**CTA:** Learn more
+
+
+**2: Leadership & Business Coaching**
+For founders and leaders who want stronger strategy, better leadership habits, and sustainable growth.
+**CTA:** Learn more
+
+
+**3: Clarity Intensive (One-off session)**
+A focused deep-dive session to untangle what’s stuck and leave with a clear action plan.
+**CTA:** Book now
+
+
+---
+
+
+### APPROACH
+**Title:**
+My approach
+
+
+**Copy:**
+My coaching combines deep listening, practical strategy, and honest reflection, so you create progress that is both meaningful and sustainable.
+
+
+**3-step framework:**
+1. **Clarify** what matters, what’s blocking you, and where you want to go
+2. **Align** your decisions, priorities, and leadership with your values
+3. **Thrive** with consistent action, stronger confidence, and real momentum
+
+
+---
+
+
+### RESULTS / TESTIMONIALS
+**Title:**
+What clients experience
+
+
+- “I finally had clarity on my next move and felt confident taking action.”
+- “I lead my team with more confidence and less stress.”
+- “My business decisions are now aligned, focused, and more effective.”
+
+
+(Replace with real client quotes when ready)
+
+
+---
+
+
+### ABOUT TA
+**Title:**
+Hi, I’m TA
+
+
+**Copy:**
+I’m a coach for leaders and professionals who want clarity, alignment, and authentic success.
+
+
+My work is about helping you cut through noise, reconnect with what matters, and move forward in a way that is strategic, sustainable, and true to you.
+
+
+This is not one-size-fits-all coaching. It’s a thoughtful, practical partnership designed around your goals, values, and next chapter.
+
+
+**CTA:** Book a Clarity Call
+
+
+---
+
+
+### FAQ
+**Q: Who do you work with?**
+Founders, leaders, and professionals who want clarity, stronger leadership, and aligned growth.
+
+
+**Q: Do you offer online coaching?**
+Yes, sessions are available online (and in-person if/when available).
+
+
+**Q: How long do clients usually work with you?**
+It depends on your goals. Some begin with a Clarity Intensive, others continue with ongoing coaching.
+
+
+**Q: What if I’m not sure which offer fits?**
+Book a Clarity Call and we’ll choose the best starting point together.
+
+
+---
+
+
+### FINAL CTA
+**Headline:**
+Ready for clarity and aligned growth?
+
+
+**Copy:**
+Let’s create your next chapter with confidence.
+
+
+**Button:**
+Book a Clarity Call
+
+
+---
+
+
+### FOOTER
+- Home
+- Blog
+- Contact
+- LinkedIn (optional)
+- Copyright line
+
+
+---
+
+
+## 3) Blog page structure (separate page)
+
+
+**Page title:** Insights for Clarity, Leadership, and Thriving
+**Intro:** Practical reflections and tools to help you lead and grow in a way that works for you.
+
+
+**Layout:**
+- Featured post at top
+- Then simple 2-column post grid
+- Category tags (start with 3): Clarity, Leadership, Business Growth
+- Email subscribe block (optional later)
+
+
+**First 6 blog topic ideas:**
+1. 5 signs you’re successful on paper but out of alignment
+2. How to make clear decisions when everything feels urgent
+3. Leadership without burnout: sustainable high performance
+4. From busy to focused: a weekly clarity reset for founders
+5. Why values-based leadership creates better business outcomes
+6. What “thriving your way” actually looks like in real life
+
+
+---
+
+
+## 4) Style direction for CEO (so it matches your references)
+
+
+- Keep lots of whitespace (Bloom feel)
+- Soft neutral background, high-contrast text
+- One accent color only
+- Clean sans-serif font pairing
+- Short sections, clear headings, no clutter
+- Buttons consistent across page
+- Use real photography (warm, grounded, professional)
+- Avoid heavy animations
