@@ -1,0 +1,159 @@
+﻿Website Sitemap
+Brand Positioning
+Lead with Clarity. Grow in Alignment. Thrive with Purpose.
+Primary audience: professionals, leaders, and business owners (especially women) who are capable, stretched, and seeking aligned growth without burnout.
+Primary conversion goal: Book a Clarity Call
+Secondary conversion goals: lead magnet opt-ins and workshop enquiries.
+________________
+
+
+1) Full Sitemap (Recommended)
+1. Home
+2. About / Why Work With Me
+3. Work With Me (overview)
+   * Lead From Within™
+   * Leadership Architecture™
+   * The Impact Accelerator™
+   * Workshops (Corporate + Community)
+4. Meta Dynamics Profiling
+   * Mini Profiler (Free)
+   * Full Profiler (In-depth)
+5. Resources
+   * Free: 5-Step Leadership Reset
+   * Free: Boundaries Blueprint
+   * Paid: Self-Leadership Workbook
+6. Book a Clarity Call
+7. Contact / Workshop Enquiry
+8. Blog / Insights (optional, useful for SEO + lead capture)
+________________
+
+
+2) Homepage Structure (End-to-End)
+Section A — Hero
+* Headline: Lead with Clarity. Grow in Alignment. Thrive with Purpose.
+* Subheadline: brief promise for leaders seeking sustainable growth and alignment.
+* Primary CTA: Book a Clarity Call
+* Secondary CTA: Take the Free Mini Profiler
+Section B — Empathy / Problem Aware
+* “You carry a lot” section.
+* Outcome-led bridge to aligned leadership.
+* CTA: Take the Free Mini Profiler
+Section C — Who I Work With
+* 3 audience bullets.
+* CTA: See How We Can Work Together
+Section D — Ways We Can Work Together (4 cards)
+* Lead From Within™
+* Leadership Architecture™
+* The Impact Accelerator™
+* Workshops (Corporate + Community)
+* CTA per card: Learn More
+Section E — Mini vs Full Profiler
+* Clarify free high-level snapshot vs full deep-dive.
+* Primary CTA: Start with the Free Mini Profiler
+* Secondary CTA: Book a Clarity Call
+Section F — Why Work With Me
+* Story + credibility + coaching philosophy.
+* CTA: Book a Call
+Section G — Lead Magnet Strip (Segmented)
+* Free Mini Profiler
+* 5-Step Leadership Reset
+* Boundaries Blueprint
+* Paid Self-Leadership Workbook
+* CTA: Explore Resources
+Section H — Social Proof (when available)
+* Testimonials/results snapshots.
+* CTA: Book a Clarity Call
+Section I — Final CTA
+* Strong close with one clear action.
+* CTA: Book Your Clarity Call
+________________
+
+
+3) Lead Magnet Placement Strategy (Best Fit)
+Primary lead magnet
+Free Mini Profiler
+Place on:
+* Homepage hero (primary/secondary CTA placement depending on page focus)
+* Mid-page and final CTA
+* Profiling page top section
+Reason: strongest alignment to your method and natural bridge to clarity call/full profiler.
+Secondary free magnets
+5-Step Leadership Reset
+Place on:
+* Exit intent popup / sticky footer
+* Blog posts
+* Resources page
+* Thank-you page after mini profiler opt-in
+Boundaries Blueprint
+Place on:
+* Lead From Within™ page
+* Burnout/overwhelm-related content
+* Email nurture sequence (email #2 or #3)
+Paid lead magnet
+Self-Leadership Workbook (Paid)
+Place on:
+* Resources page
+* Post-opt-in thank-you page (tripwire option)
+* Email nurture soft pitch
+Avoid as primary homepage CTA — keep homepage focused on free mini profiler and clarity call.
+________________
+
+
+4) CTA Hierarchy Rules
+Use one primary CTA per page:
+* Home: Book a Clarity Call (with Mini Profiler as clear secondary)
+* Mini Profiler page: Take Mini Profiler
+* Coaching pages: Book Discovery/Clarity Call
+* Workshops page: Enquire About Workshops
+* Resources page: Download / Buy resource
+Keep secondary CTA subtle and supportive.
+________________
+
+
+5) Suggested Funnel (Simple + High Conversion)
+1. Visitor lands on homepage
+2. Takes Free Mini Profiler or books a Clarity Call
+3. Thank-you page invites Book Clarity Call
+4. If not ready, offer:
+   * 5-Step Leadership Reset OR
+   * Boundaries Blueprint
+5. Nurture emails build trust
+6. Convert to:
+   * Full Profiler
+   * Coaching package
+   * Workshop enquiry
+________________
+
+
+6) Navigation Recommendation (Top Menu)
+* Home
+* About
+* Work With Me
+* Profiling
+* Resources
+* Workshops
+* Book a Call
+Button style for menu CTA: Book a Call
+________________
+
+
+7) Quick Implementation Priorities
+Priority 1 (this week)
+* Finalise homepage with clear CTA hierarchy
+* Publish Work With Me overview + offer pages
+* Publish Workshop enquiry form
+Priority 2
+* Build Resources page with 3 free/paid magnets
+* Add thank-you pages and cross-offers
+Priority 3
+* Add nurture emails + testimonials + blog content
+________________
+
+
+8) Copy Consistency Guardrails
+* Tone: warm, grounded, practical, empowering.
+* Avoid hype and jargon.
+* Speak to outcomes: clarity, confidence, alignment, sustainable growth.
+* Keep sections concise; mobile-first readability.
+* Repeat key transformation language consistently.
+* No pricing shown on website pages.

@@ -1,0 +1,59 @@
+﻿Brand Style guide snippet
+________________
+
+
+You Lead Coaching — Style Guide (Quick Reference)
+Colours
+* Gold: #C6A75E → Buttons, accents, highlights
+* Deep Green: #1F3A2E → Key sections, footer
+* Beige: #F4EFE7 → Background sections
+* White: #FFFFFF → Main canvas
+* Charcoal: #2C2C2C → Text
+________________
+
+
+Usage Rules
+* Beige / White: 60–70%
+* Green: 15–20%
+* Gold: 8–12% (accents only)
+👉 Gold is NOT used as a background colour
+________________
+
+
+Typography
+Headings: Serif (Playfair Display / Cormorant)
+Body: Sans-serif (Inter / Avenir)
+________________
+
+
+Tone
+* Warm, grounded, calm authority
+* Clear, not fluffy
+* Emotionally intelligent
+* Human, not corporate
+________________
+
+
+Layout Principles
+* Large spacing (100px+ sections)
+* Narrow text width (600–720px)
+* Minimal design
+* No clutter
+________________
+
+
+Buttons
+Primary:
+* Gold background
+* Dark text
+Secondary:
+* Outline style
+________________
+
+
+Imagery
+* Natural light
+* Calm, confident presence
+* No busy backgrounds
+* No generic stock photos
+________________
