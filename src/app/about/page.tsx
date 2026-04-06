@@ -1,16 +1,15 @@
-import Image from "next/image";
+import Link from "next/link";
 import type { Metadata } from "next";
 import { CTASection } from "@/components/layout/CTASection";
-import { SectionDivider } from "@/components/ui/section-divider";
 
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn about You Lead Coaching — our mission, philosophy, and the journey behind transformative leadership coaching.",
+    "Meet Thu Anh Flynn — the coach behind YouLead Coaching. Over 20 years of experience in advertising and marketing, now helping driven professionals find clarity and lead with confidence.",
   openGraph: {
     title: "About | You Lead Coaching",
     description:
-      "Learn about You Lead Coaching — our mission, philosophy, and the journey behind transformative leadership coaching.",
+      "Meet Thu Anh Flynn — the coach behind YouLead Coaching. Over 20 years of experience in advertising and marketing, now helping driven professionals find clarity and lead with confidence.",
   },
 };
 
@@ -21,185 +20,141 @@ export default function AboutPage() {
       <section className="bg-forest py-20 sm:py-28">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
           <h1 className="font-heading text-4xl font-bold text-warm-white sm:text-5xl lg:text-6xl">
-            About You Lead Coaching
+            Meet Your Coach
           </h1>
-          <p className="mt-6 text-lg text-warm-white/70 sm:text-xl">
-            Empowering leaders to unlock their full potential through clarity,
-            confidence, and purposeful growth.
-          </p>
         </div>
       </section>
 
-      {/* Divider: Hero → Coach Bio */}
-      <SectionDivider variant="wave" from="cream" to="warm-white" />
-
       {/* Coach Bio */}
-      <section className="bg-radial-gold-bl py-16 sm:py-24">
+      <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 md:grid-cols-2">
-            {/* Coach photo */}
+            {/* Photo placeholder */}
             <div className="flex items-center justify-center">
-              <div className="relative h-80 w-80 overflow-hidden rounded-2xl sm:h-96 sm:w-96">
-                <Image
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80"
-                  alt="Professional executive coach in a modern office setting"
-                  fill
-                  priority
-                  className="object-cover"
-                />
+              <div className="flex h-80 w-80 flex-col items-center justify-center rounded-2xl bg-cream text-charcoal/40 sm:h-96 sm:w-96">
+                <svg
+                  className="h-24 w-24"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+                  />
+                </svg>
+                <p className="mt-3 text-sm">Coach photo coming soon</p>
               </div>
             </div>
 
             {/* Bio text */}
             <div>
               <h2 className="font-heading text-3xl font-bold text-charcoal sm:text-4xl">
-                Your Coach
+                Meet Your Coach
               </h2>
-              <p className="mt-2 text-lg font-medium text-gold-dark">
-                ICF Certified Coach &bull; Leadership Strategist
-              </p>
               <p className="mt-6 text-charcoal/80 leading-relaxed">
-                With over a decade of experience in executive development and
-                organizational leadership, I founded You Lead Coaching to help
-                ambitious professionals bridge the gap between where they are and
-                where they&apos;re meant to be.
+                I know what it&apos;s like to work hard and still feel unclear.
               </p>
               <p className="mt-4 text-charcoal/80 leading-relaxed">
-                My coaching philosophy is built on the belief that every leader
-                already holds the answers within. My role is to create the space,
-                ask the right questions, and provide the frameworks that unlock
-                those answers — so you can lead with authenticity, clarity, and
-                lasting impact.
+                There was a point in my career where, on the outside, everything
+                looked fine. But internally, I felt lost, unmotivated, and unsure
+                of what was next.
               </p>
               <p className="mt-4 text-charcoal/80 leading-relaxed">
-                I&apos;ve worked with executives across industries including
-                technology, healthcare, finance, and non-profit, helping them
-                navigate career transitions, build high-performing teams, and
-                cultivate the confidence to lead at the highest levels.
+                I had spent over 20 years in advertising and marketing. It was
+                all I knew. Yet something didn&apos;t feel right anymore.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Divider: Coach Bio → Mission */}
-      <SectionDivider variant="curve" from="warm-white" to="cream" />
-
-      {/* Mission / Vision */}
-      <section className="bg-cream bg-pattern-dots-glow py-16 sm:py-24">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="rounded-2xl border-l-4 border-gold bg-white p-8 shadow-sm sm:p-12">
-            <h2 className="font-heading text-3xl font-bold text-charcoal sm:text-4xl">
-              Our Mission
-            </h2>
-            <p className="mt-6 text-lg leading-relaxed text-charcoal/80">
-              To empower emerging and established leaders with the self-awareness,
-              strategic thinking, and emotional intelligence they need to create
-              meaningful change — in their careers, their organizations, and their
-              lives.
-            </p>
-            <div className="mt-8 border-t border-charcoal/10 pt-8">
-              <h3 className="font-heading text-2xl font-bold text-charcoal">
-                Our Vision
-              </h3>
-              <p className="mt-4 text-lg leading-relaxed text-charcoal/80">
-                A world where every leader feels equipped and inspired to lead with
-                purpose — where leadership is not a title, but a way of showing up
-                for the people and causes that matter most.
+              <p className="mt-4 text-charcoal/80 leading-relaxed">
+                I wanted to contribute more. To see the impact of my work
+                directly. But I didn&apos;t know where to go or how to move
+                forward.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Divider: Mission → Journey */}
-      <SectionDivider variant="wave" from="cream" to="warm-white" />
-
-      {/* Journey / Story Timeline */}
-      <section className="bg-radial-gold-tr py-16 sm:py-24">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-center font-heading text-3xl font-bold text-charcoal sm:text-4xl">
-            The Journey
-          </h2>
-          <p className="mt-4 text-center text-charcoal/70">
-            How You Lead Coaching came to be
-          </p>
-
-          <div className="mt-12 space-y-12">
-            {[
-              {
-                label: "The Spark",
-                title: "A passion for people",
-                description:
-                  "It started with a simple observation: talented professionals were struggling not because they lacked skill, but because they lacked support. The seed for You Lead Coaching was planted.",
-                image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&q=80",
-                imageAlt: "Professionals having an inspiring conversation",
-              },
-              {
-                label: "The Training",
-                title: "Deepening the craft",
-                description:
-                  "Years of rigorous training in executive coaching methodologies, positive psychology, and organizational behavior followed — along with ICF certification and hundreds of coaching hours.",
-                image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&q=80",
-                imageAlt: "Study materials and certification preparation",
-              },
-              {
-                label: "The Launch",
-                title: "You Lead Coaching is born",
-                description:
-                  "What began as one-on-one sessions grew into a full coaching practice offering executive coaching, group programs, and leadership workshops for teams and organizations.",
-                image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&q=80",
-                imageAlt: "Launching a new coaching business",
-              },
-              {
-                label: "Today",
-                title: "Growing impact",
-                description:
-                  "Today, You Lead Coaching serves leaders at every stage — from first-time managers finding their voice to seasoned executives navigating their next chapter. The mission remains the same: help you lead.",
-                image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&q=80",
-                imageAlt: "Diverse team of leaders collaborating",
-              },
-            ].map((milestone, index) => (
-              <div key={index} className="flex gap-6 sm:gap-8">
-                <div className="flex flex-col items-center">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold text-charcoal font-semibold text-sm">
-                    {index + 1}
-                  </div>
-                  {index < 3 && (
-                    <div className="mt-2 h-full w-px bg-gold/30" />
-                  )}
-                </div>
-                <div className="flex-1 pb-2">
-                  <span className="text-sm font-semibold uppercase tracking-wider text-gold-dark">
-                    {milestone.label}
-                  </span>
-                  <h3 className="mt-1 font-heading text-xl font-bold text-charcoal">
-                    {milestone.title}
-                  </h3>
-                  <p className="mt-2 leading-relaxed text-charcoal/80">
-                    {milestone.description}
-                  </p>
-                  <div className="relative mt-4 h-40 w-full overflow-hidden rounded-xl sm:h-48">
-                    <Image
-                      src={milestone.image}
-                      alt={milestone.imageAlt}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
+              <p className="mt-4 text-charcoal/80 leading-relaxed">
+                I remember feeling pulled in different directions, questioning my
+                confidence, and wondering if it was too late to change.
+              </p>
+              <p className="mt-4 text-charcoal/80 leading-relaxed">
+                That was the moment I realised:
+              </p>
+              <p className="mt-4 text-charcoal/80 leading-relaxed">
+                <strong>
+                  I can&apos;t keep living like this. I need clarity.
+                </strong>
+              </p>
+              <p className="mt-4 text-charcoal/80 leading-relaxed">
+                I had always felt a sense of entrepreneurship in me, but without
+                guidance or a mentor, I didn&apos;t know how to explore that
+                path.
+              </p>
+              <p className="mt-4 text-charcoal/80 leading-relaxed">
+                That experience is why I&apos;m especially passionate about
+                supporting women who feel the same pull, but aren&apos;t sure
+                where or how to begin.
+              </p>
+              <p className="mt-4 text-charcoal/80 leading-relaxed">
+                Over time, I found my way back, not by working harder, but by
+                understanding myself more deeply.
+              </p>
+              <p className="mt-4 text-charcoal/80 leading-relaxed">
+                That journey shaped how I coach today.
+              </p>
+              <p className="mt-4 text-charcoal/80 leading-relaxed">
+                Practical. Human. Strategic. Always aligned to who you are.
+              </p>
+              <p className="mt-4 text-charcoal/80 leading-relaxed">
+                Today, I work with driven professionals, business owners, and
+                leaders who feel exactly how I once felt.
+              </p>
+              <p className="mt-4 text-charcoal/80 leading-relaxed italic">
+                &lsquo;I&apos;m working hard, but something doesn&apos;t feel
+                right.&rsquo;
+              </p>
+              <p className="mt-2 text-charcoal/80 leading-relaxed italic">
+                &lsquo;I feel stuck and don&apos;t know what direction I&apos;m
+                heading.&rsquo;
+              </p>
+              <p className="mt-2 text-charcoal/80 leading-relaxed italic">
+                &lsquo;I don&apos;t have time, but it still feels like
+                it&apos;s not enough.&rsquo;
+              </p>
+              <p className="mt-4 text-charcoal/80 leading-relaxed">
+                I created{" "}
+                <strong>YouLead Coaching</strong> to help you find
+                clarity faster, move through uncertainty with support, and build
+                success that feels aligned, not forced.
+              </p>
+              <p className="mt-4 text-charcoal/80 leading-relaxed">
+                I believe there is a leader in every one of us. When you have the
+                right guidance, clarity, and support, you can see what&apos;s
+                possible and go after it with confidence.
+              </p>
+              <p className="mt-4 text-charcoal/80 leading-relaxed">
+                <strong>
+                  You don&apos;t need to do more. You need clarity, direction,
+                  and a way forward that feels like you.
+                </strong>
+              </p>
+              <div className="mt-8">
+                <Link
+                  href="/services"
+                  className="inline-block rounded-lg bg-gold px-8 py-3 text-base font-semibold text-charcoal transition-colors hover:bg-gold-light"
+                >
+                  Work With Me
+                </Link>
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* CTA */}
       <CTASection
-        heading="Ready to Start Your Journey?"
-        description="Take the first step toward becoming the leader you were meant to be. Let's explore how coaching can transform your career and life."
-        buttonText="Get in Touch"
-        buttonHref="/contact"
+        heading="Ready to lead with clarity?"
+        description=""
+        buttonText="Work With Me"
+        buttonHref="/services"
       />
     </>
   );

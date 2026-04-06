@@ -2,41 +2,38 @@ import Link from "next/link";
 
 const services = [
   {
-    title: "Self-Leadership",
-    description:
-      "Build self-awareness, emotional intelligence, and inner confidence to lead from a grounded, authentic place.",
+    title: "Self-Leadership Coaching",
+    description: "Clarity, confidence, direction",
     href: "/services",
   },
   {
-    title: "Executive Coaching",
-    description:
-      "Personalised 1:1 coaching to help you navigate challenges, amplify your strengths, and lead with greater impact.",
+    title: "Leadership Coaching",
+    description: "Communication, influence, culture",
     href: "/services",
   },
   {
-    title: "Group Coaching",
-    description:
-      "Grow alongside a small cohort of leaders. Gain fresh perspectives and build lasting professional connections.",
+    title: "Business Coaching",
+    description: "Strategy, structure, sustainability",
     href: "/services",
   },
 ];
 
 export function ServicesOverview() {
   return (
-    <section className="bg-forest py-16 sm:py-24">
+    <section className="bg-forest py-16 sm:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-center font-heading text-3xl font-bold text-warm-white sm:text-4xl">
-          Coaching for Professionals &amp; Leaders
+          How We Can Work Together
         </h2>
         <p className="mt-4 text-center text-warm-white/70">
-          Programs designed to meet you where you are and take you where you want to go
+          Coaching programs designed to meet you where you are
         </p>
 
         <div className="mt-12 grid gap-8 md:grid-cols-3">
           {services.map((service) => (
             <div
               key={service.title}
-              className="flex flex-col rounded-2xl border border-warm-white/10 bg-forest-light/20 p-8 transition-all hover:border-gold/30 hover:bg-forest-light/30"
+              className="group flex flex-col rounded-2xl border border-warm-white/10 bg-warm-white/5 p-8 transition-all duration-300 hover:-translate-y-1 hover:bg-warm-white/10"
             >
               <h3 className="font-heading text-2xl font-bold text-warm-white">
                 {service.title}
@@ -50,7 +47,7 @@ export function ServicesOverview() {
               >
                 Learn More
                 <svg
-                  className="h-4 w-4"
+                  className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"

@@ -17,9 +17,8 @@ import {
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
-  { href: "/testimonials", label: "Testimonials" },
-  { href: "/contact", label: "Contact" },
+  { href: "/services", label: "Work With Me" },
+  { href: "#", label: "Resources" },
 ] as const;
 
 export function Navbar() {
@@ -39,8 +38,8 @@ export function Navbar() {
     <header
       className={`sticky top-0 z-40 w-full transition-colors duration-300 ${
         scrolled
-          ? "bg-forest/95 shadow-md backdrop-blur-sm"
-          : "bg-forest"
+          ? "bg-background/95 shadow-sm backdrop-blur-sm"
+          : "bg-transparent"
       }`}
     >
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
@@ -59,10 +58,10 @@ export function Navbar() {
               <li key={href}>
                 <Link
                   href={href}
-                  className={`rounded-md px-3 py-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 ${
+                  className={`rounded-md px-3 py-2 text-sm font-medium transition-colors ${
                     active
                       ? "text-gold"
-                      : "text-warm-white/80 hover:text-gold"
+                      : "text-foreground/80 hover:text-gold"
                   }`}
                 >
                   {label}
@@ -74,12 +73,9 @@ export function Navbar() {
 
         {/* Desktop CTA */}
         <div className="hidden md:block">
-          <Link
-            href="/contact"
-            className="inline-block rounded-lg bg-gold px-5 py-2 text-sm font-semibold text-forest-dark transition-colors hover:bg-gold-light"
-          >
-            Book a Discovery Call
-          </Link>
+          <Button render={<Link href="/contact" />}>
+            Book a Call
+          </Button>
         </div>
 
         {/* Mobile menu */}
@@ -87,7 +83,7 @@ export function Navbar() {
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger
               render={
-                <Button variant="ghost" size="icon" aria-label="Open menu" className="text-warm-white hover:text-gold hover:bg-forest-light" />
+                <Button variant="ghost" size="icon" aria-label="Open menu" />
               }
             >
               <Menu className="size-5" />
@@ -109,10 +105,10 @@ export function Navbar() {
                       render={
                         <Link
                           href={href}
-                          className={`rounded-md px-3 py-2.5 text-base font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 ${
+                          className={`rounded-md px-3 py-2.5 text-base font-medium transition-colors ${
                             active
-                              ? "bg-forest/10 text-forest"
-                              : "text-foreground/80 hover:text-forest"
+                              ? "bg-primary/10 text-gold"
+                              : "text-foreground/80 hover:text-gold"
                           }`}
                         />
                       }
@@ -123,8 +119,8 @@ export function Navbar() {
                 })}
                 <div className="mt-4 border-t pt-4">
                   <SheetClose render={<Link href="/contact" />}>
-                    <Button className="w-full bg-gold text-forest-dark hover:bg-gold-light">
-                      Book a Discovery Call
+                    <Button className="w-full">
+                      Book a Call
                     </Button>
                   </SheetClose>
                 </div>
