@@ -4,27 +4,15 @@ import { FadeIn } from "@/components/ui/fade-in";
 const testimonials = [
   {
     quote:
-      "Working with You Lead Coaching was a turning point in my career. I went from feeling overwhelmed to leading my team with clarity and purpose.",
-    name: "Sarah M.",
-    role: "VP of Engineering",
-    avatar:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80",
+      "TA's coaching gave me practical direction and clarity I could actually act on. I left each session feeling more confident, focused, and supported.",
+    name: "Client",
+    role: "",
   },
   {
     quote:
-      "The coaching helped me find my voice as a leader. I now approach challenges with confidence and a strategic mindset I didn't know I had.",
-    name: "James T.",
-    role: "Director of Operations",
-    avatar:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
-  },
-  {
-    quote:
-      "I was skeptical at first, but the results speak for themselves. My team engagement scores are up 40% and I finally feel like the leader I was meant to be.",
-    name: "Priya K.",
-    role: "Senior Product Manager",
-    avatar:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80",
+      "Working with TA helped me reconnect with myself and make decisions with more confidence. Her approach is warm, strategic, and deeply empowering.",
+    name: "Client",
+    role: "",
   },
 ];
 
@@ -43,6 +31,29 @@ const services = [
     title: "Business Coaching",
     tagline: "Strategy, structure, sustainability",
     href: "#contact",
+  },
+];
+
+const faqs = [
+  {
+    question: "Who do you work with?",
+    answer:
+      "Founders, leaders, and professionals who want clarity, stronger leadership, and aligned growth.",
+  },
+  {
+    question: "Do you offer online coaching?",
+    answer:
+      "Yes, sessions are available online (and in-person if/when available).",
+  },
+  {
+    question: "How long do clients usually work with you?",
+    answer:
+      "It depends on your goals. Some begin with a Clarity Intensive, others continue with ongoing coaching.",
+  },
+  {
+    question: "What if I'm not sure which offer fits?",
+    answer:
+      "Book a Clarity Call and we'll choose the best starting point together.",
   },
 ];
 
@@ -72,13 +83,13 @@ export default function Home() {
                   href="#contact"
                   className="inline-block rounded-lg bg-gold px-8 py-3 text-base font-semibold text-charcoal transition-colors hover:bg-gold-light"
                 >
-                  Book a Free Clarity Call
+                  Book a Clarity Call
                 </a>
                 <a
                   href="#lead-magnet"
                   className="inline-block rounded-lg border border-warm-white/40 bg-warm-white/10 px-8 py-3 text-base font-semibold text-warm-white backdrop-blur-sm transition-colors hover:bg-warm-white/20"
                 >
-                  Download the Leadership Reset Guide
+                  Take the Free Clarity Snapshot
                 </a>
               </div>
             </div>
@@ -97,6 +108,16 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ===== TRUST STRIP (from Bloom Draft) ===== */}
+      <section className="border-b border-charcoal/5 bg-white py-6">
+        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
+          <p className="text-sm tracking-wide text-charcoal/50">
+            Trusted by growth-minded leaders, founders, and professionals
+            navigating change, growth, and reinvention.
+          </p>
         </div>
       </section>
 
@@ -267,40 +288,33 @@ export default function Home() {
                 />
               </div>
 
-              {/* Bio */}
+              {/* Bio — homepage short version from Content doc */}
               <div>
                 <h2 className="font-heading text-3xl font-bold text-charcoal sm:text-4xl">
-                  Thu Anh Flynn
+                  Meet Your Coach
                 </h2>
-                <p className="mt-2 text-lg font-medium text-gold-dark">
-                  Leadership &amp; Business Coach
-                </p>
                 <p className="mt-6 leading-relaxed text-charcoal/80">
                   I know what it&apos;s like to work hard and still feel unclear.
-                  There was a point in my career where, on the outside, everything
-                  looked fine. But internally, I felt lost, unmotivated, and unsure
-                  of what was next.
                 </p>
                 <p className="mt-4 leading-relaxed text-charcoal/80">
-                  I had spent over 20 years in advertising and marketing. It was
-                  all I knew. Yet something didn&apos;t feel right anymore. I
-                  wanted to contribute more. To see the impact of my work directly.
+                  After more than 20 years in advertising and marketing, I
+                  reached a point where everything looked fine on the outside,
+                  but internally I felt stuck, unmotivated, and unsure of what
+                  was next. I had always felt a pull towards something more, but
+                  without guidance, I didn&apos;t know how to move forward.
                 </p>
                 <p className="mt-4 leading-relaxed text-charcoal/80">
-                  I created <strong>YouLead Coaching</strong> to help you find
-                  clarity faster, move through uncertainty with support, and build
-                  success that feels aligned, not forced.
-                </p>
-                <p className="mt-4 leading-relaxed text-charcoal/80">
-                  <strong>Practical. Human. Strategic.</strong> Always aligned to
-                  who you are.
+                  That&apos;s why I do the work I do today. I help driven
+                  professionals, business owners, and leaders gain clarity,
+                  realign what matters, and move forward with confidence and
+                  structure.
                 </p>
                 <div className="mt-8">
                   <a
                     href="#services"
                     className="inline-flex items-center gap-1 text-sm font-semibold text-gold-dark transition-colors hover:text-gold"
                   >
-                    Read My Story
+                    See My Journey
                     <svg
                       className="h-4 w-4"
                       fill="none"
@@ -347,12 +361,12 @@ export default function Home() {
       {/* ===== SECTION 8 — TESTIMONIALS (beige bg, gold quotes) — id="testimonials" ===== */}
       <FadeIn>
         <section id="testimonials" className="scroll-mt-20 bg-cream py-24 sm:py-36">
-          <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <h2 className="text-center font-heading text-3xl font-bold text-charcoal sm:text-4xl">
-              What Our Clients Say
+              What Clients Experience
             </h2>
 
-            <div className="mt-14 grid gap-8 md:grid-cols-3">
+            <div className="mt-14 grid gap-8 md:grid-cols-2">
               {testimonials.map((testimonial, index) => (
                 <div
                   key={index}
@@ -369,28 +383,18 @@ export default function Home() {
                     <p className="leading-relaxed text-charcoal/80">
                       &ldquo;{testimonial.quote}&rdquo;
                     </p>
-                    <footer className="mt-6 flex items-center gap-3">
-                      <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-full ring-2 ring-gold/30">
-                        <Image
-                          src={testimonial.avatar}
-                          alt={`${testimonial.name} photo`}
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                      <div>
-                        <p className="font-semibold text-charcoal">
-                          {testimonial.name}
-                        </p>
-                        <p className="text-sm text-charcoal/60">
-                          {testimonial.role}
-                        </p>
-                      </div>
+                    <footer className="mt-6">
+                      <p className="text-sm italic text-charcoal/50">
+                        — {testimonial.name}
+                      </p>
                     </footer>
                   </blockquote>
                 </div>
               ))}
             </div>
+            <p className="mt-8 text-center text-sm text-charcoal/40">
+              Names and roles will be added with client permission.
+            </p>
           </div>
         </section>
       </FadeIn>
@@ -399,31 +403,66 @@ export default function Home() {
       <section id="lead-magnet" className="bg-forest py-24 sm:py-36">
         <div className="mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8">
           <h2 className="font-heading text-3xl font-bold text-warm-white sm:text-4xl">
-            Feeling stretched? Start here.
+            Free Leadership Clarity Snapshot
           </h2>
+          <p className="mt-6 text-lg leading-relaxed text-warm-white/80">
+            Get a quick insight into how you currently approach decisions,
+            challenges, and leadership. This short profile will highlight your
+            natural tendencies, where you may be getting stuck, and what could be
+            influencing how you think and act.
+          </p>
           <div className="mt-8">
             <a
               href="#"
               className="inline-block rounded-lg bg-gold px-8 py-3 text-base font-semibold text-charcoal transition-colors hover:bg-gold-light"
             >
-              Get the Free Guide
+              Get My Free Clarity Snapshot
             </a>
           </div>
+          <p className="mt-8 text-warm-white/60">
+            Want to go deeper? Book a free Clarity Call and we&apos;ll walk
+            through your results together.
+          </p>
         </div>
       </section>
+
+      {/* ===== FAQ (cherry-picked from Bloom Draft) ===== */}
+      <FadeIn>
+        <section className="bg-white py-24 sm:py-36">
+          <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
+            <h2 className="text-center font-heading text-3xl font-bold text-charcoal sm:text-4xl">
+              Frequently Asked Questions
+            </h2>
+            <div className="mt-12 space-y-8">
+              {faqs.map((faq, index) => (
+                <div key={index}>
+                  <h3 className="font-heading text-lg font-semibold text-charcoal">
+                    {faq.question}
+                  </h3>
+                  <p className="mt-2 leading-relaxed text-charcoal/70">
+                    {faq.answer}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </FadeIn>
 
       {/* ===== SECTION 10 — FINAL CTA (white bg, minimal) ===== */}
       <section className="bg-white py-24 sm:py-36">
         <div className="mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8">
-          <h2 className="font-heading text-3xl font-bold text-charcoal sm:text-4xl">
-            Ready to lead with clarity?
-          </h2>
+          <p className="text-lg leading-relaxed text-charcoal/80">
+            You don&apos;t have to figure this out on your own. If you&apos;re
+            ready for more clarity, stronger direction, and a way forward that
+            actually feels aligned — let&apos;s map your next move together.
+          </p>
           <div className="mt-8">
             <a
               href="#contact"
               className="inline-block rounded-lg bg-gold px-8 py-3 text-base font-semibold text-charcoal transition-colors hover:bg-gold-light focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2"
             >
-              Book Your Free Clarity Call
+              Book a Clarity Call
             </a>
           </div>
         </div>
