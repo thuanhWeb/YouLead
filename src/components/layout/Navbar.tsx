@@ -17,9 +17,8 @@ import {
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
-  { href: "/testimonials", label: "Testimonials" },
-  { href: "/contact", label: "Contact" },
+  { href: "/services", label: "Work With Me" },
+  { href: "#", label: "Resources" },
 ] as const;
 
 export function Navbar() {
@@ -75,7 +74,7 @@ export function Navbar() {
         {/* Desktop CTA */}
         <div className="hidden md:block">
           <Button render={<Link href="/contact" />}>
-            Book a Discovery Call
+            Book a Call
           </Button>
         </div>
 
@@ -121,7 +120,7 @@ export function Navbar() {
                 <div className="mt-4 border-t pt-4">
                   <SheetClose render={<Link href="/contact" />}>
                     <Button className="w-full">
-                      Book a Discovery Call
+                      Book a Call
                     </Button>
                   </SheetClose>
                 </div>

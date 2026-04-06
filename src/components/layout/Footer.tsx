@@ -5,14 +5,14 @@ import { Globe, Mail, ExternalLink, Link2 } from "lucide-react";
 
 const footerNav = {
   coaching: [
-    { href: "/services", label: "Executive Coaching" },
-    { href: "/services", label: "Group Programs" },
-    { href: "/services", label: "Workshops" },
+    { href: "/services", label: "Self-Leadership Coaching" },
+    { href: "/services", label: "Leadership Coaching" },
+    { href: "/services", label: "Business Coaching" },
   ],
   company: [
     { href: "/about", label: "About" },
-    { href: "/testimonials", label: "Testimonials" },
-    { href: "/contact", label: "Contact" },
+    { href: "/services", label: "Work With Me" },
+    { href: "/contact", label: "Book a Call" },
   ],
 };
 
@@ -34,7 +34,7 @@ export function Footer() {
               You Lead Coaching
             </Link>
             <p className="mt-3 text-sm text-warm-white/70">
-              Transform your leadership with clarity, confidence, and growth.
+              True leadership starts from within.
             </p>
             <div className="mt-4 flex gap-3">
               {socialLinks.map(({ href, label, icon: Icon }) => (
