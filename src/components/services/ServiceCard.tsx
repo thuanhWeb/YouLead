@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 interface ServiceCardProps {
   title: string;
   description: string;
@@ -22,12 +20,12 @@ export function ServiceCard({
         <p className="mt-3 leading-relaxed text-charcoal/70">{description}</p>
 
         <div className="mt-auto pt-8">
-          <Link
+          <a
             href={ctaHref}
             className="inline-block w-full rounded-lg bg-gold px-6 py-3 text-center font-semibold text-charcoal transition-colors hover:bg-gold-light"
           >
             {ctaText}
-          </Link>
+          </a>
         </div>
       </div>
     </div>

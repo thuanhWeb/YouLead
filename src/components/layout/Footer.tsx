@@ -1,18 +1,18 @@
 "use client";
 
-import Link from "next/link";
+import Image from "next/image";
 import { Globe, Mail, ExternalLink, Link2 } from "lucide-react";
 
 const footerNav = {
   coaching: [
-    { href: "/services", label: "Self-Leadership Coaching" },
-    { href: "/services", label: "Leadership Coaching" },
-    { href: "/services", label: "Business Coaching" },
+    { href: "#services", label: "Self-Leadership Coaching" },
+    { href: "#services", label: "Leadership Coaching" },
+    { href: "#services", label: "Business Coaching" },
   ],
   company: [
-    { href: "/about", label: "About" },
-    { href: "/services", label: "Work With Me" },
-    { href: "/contact", label: "Book a Call" },
+    { href: "#about", label: "About" },
+    { href: "#services", label: "Work With Me" },
+    { href: "#contact", label: "Book a Call" },
   ],
 };
 
@@ -30,9 +30,15 @@ export function Footer() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <Link href="/" className="font-heading text-xl font-bold text-gold">
-              You Lead Coaching
-            </Link>
+            <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}>
+              <Image
+                src="/logo.svg"
+                alt="You Lead Coaching"
+                width={140}
+                height={35}
+                className="h-8 w-auto brightness-0 invert"
+              />
+            </a>
             <p className="mt-3 text-sm text-warm-white/70">
               True leadership starts from within.
             </p>
@@ -58,12 +64,12 @@ export function Footer() {
             <ul className="mt-3 space-y-2">
               {footerNav.coaching.map(({ href, label }) => (
                 <li key={label}>
-                  <Link
+                  <a
                     href={href}
                     className="text-sm text-warm-white/70 transition-colors hover:text-gold"
                   >
                     {label}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -77,12 +83,12 @@ export function Footer() {
             <ul className="mt-3 space-y-2">
               {footerNav.company.map(({ href, label }) => (
                 <li key={label}>
-                  <Link
+                  <a
                     href={href}
                     className="text-sm text-warm-white/70 transition-colors hover:text-gold"
                   >
                     {label}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>

@@ -1,8 +1,7 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import Image from "next/image";
+import { useEffect, useState, useCallback } from "react";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -15,16 +14,16 @@ import {
 } from "@/components/ui/sheet";
 
 const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/services", label: "Work With Me" },
-  { href: "#", label: "Resources" },
+  { href: "#about", label: "About" },
+  { href: "#services", label: "Work With Me" },
+  { href: "#testimonials", label: "Testimonials" },
+  { href: "#contact", label: "Contact" },
 ] as const;
 
 export function Navbar() {
-  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
     function onScroll() {
@@ -33,6 +32,38 @@ export function Navbar() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  // Track active section based on scroll position
+  useEffect(() => {
+    const sectionIds = navLinks.map((l) => l.href.slice(1));
+    function onScroll() {
+      const scrollY = window.scrollY + 120;
+      let current = "";
+      for (const id of sectionIds) {
+        const el = document.getElementById(id);
+        if (el && el.offsetTop <= scrollY) {
+          current = id;
+        }
+      }
+      setActiveSection(current);
+    }
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const scrollTo = useCallback(
+    (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+      e.preventDefault();
+      const id = href.slice(1);
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+      setOpen(false);
+    },
+    [],
+  );
 
   return (
     <header
@@ -44,20 +75,33 @@ export function Navbar() {
     >
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2">
-          <span className="font-heading text-xl font-bold text-gold">
-            You Lead Coaching
-          </span>
-        </Link>
+        <a
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+          className="flex items-center gap-2"
+        >
+          <Image
+            src="/logo.svg"
+            alt="You Lead Coaching"
+            width={160}
+            height={40}
+            className="h-8 w-auto sm:h-10"
+            priority
+          />
+        </a>
 
         {/* Desktop nav */}
         <ul className="hidden items-center gap-1 md:flex">
           {navLinks.map(({ href, label }) => {
-            const active = pathname === href;
+            const active = activeSection === href.slice(1);
             return (
               <li key={href}>
-                <Link
+                <a
                   href={href}
+                  onClick={(e) => scrollTo(e, href)}
                   className={`rounded-md px-3 py-2 text-sm font-medium transition-colors ${
                     active
                       ? "text-gold"
@@ -65,7 +109,7 @@ export function Navbar() {
                   }`}
                 >
                   {label}
-                </Link>
+                </a>
               </li>
             );
           })}
@@ -73,7 +117,14 @@ export function Navbar() {
 
         {/* Desktop CTA */}
         <div className="hidden md:block">
-          <Button render={<Link href="/contact" />}>
+          <Button
+            render={
+              <a
+                href="#contact"
+                onClick={(e) => scrollTo(e, "#contact")}
+              />
+            }
+          >
             Book a Call
           </Button>
         </div>
@@ -91,20 +142,25 @@ export function Navbar() {
             <SheetContent side="right">
               <SheetHeader>
                 <SheetTitle>
-                  <span className="font-heading text-lg font-bold text-gold">
-                    You Lead Coaching
-                  </span>
+                  <Image
+                    src="/logo.svg"
+                    alt="You Lead Coaching"
+                    width={140}
+                    height={35}
+                    className="h-8 w-auto"
+                  />
                 </SheetTitle>
               </SheetHeader>
               <nav className="flex flex-col gap-1 px-4">
                 {navLinks.map(({ href, label }) => {
-                  const active = pathname === href;
+                  const active = activeSection === href.slice(1);
                   return (
                     <SheetClose
                       key={href}
                       render={
-                        <Link
+                        <a
                           href={href}
+                          onClick={(e) => scrollTo(e, href)}
                           className={`rounded-md px-3 py-2.5 text-base font-medium transition-colors ${
                             active
                               ? "bg-primary/10 text-gold"
@@ -118,10 +174,15 @@ export function Navbar() {
                   );
                 })}
                 <div className="mt-4 border-t pt-4">
-                  <SheetClose render={<Link href="/contact" />}>
-                    <Button className="w-full">
-                      Book a Call
-                    </Button>
+                  <SheetClose
+                    render={
+                      <a
+                        href="#contact"
+                        onClick={(e) => scrollTo(e, "#contact")}
+                      />
+                    }
+                  >
+                    <Button className="w-full">Book a Call</Button>
                   </SheetClose>
                 </div>
               </nav>
