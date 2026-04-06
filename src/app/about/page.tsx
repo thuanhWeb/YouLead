@@ -18,12 +18,12 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-cream bg-pattern-dots py-24 sm:py-32">
+      <section className="bg-forest py-20 sm:py-28">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
-          <h1 className="font-heading text-4xl font-bold text-charcoal sm:text-5xl lg:text-6xl">
+          <h1 className="font-heading text-4xl font-bold text-warm-white sm:text-5xl lg:text-6xl">
             About You Lead Coaching
           </h1>
-          <p className="mt-6 text-lg text-charcoal/70 sm:text-xl">
+          <p className="mt-6 text-lg text-warm-white/70 sm:text-xl">
             Empowering leaders to unlock their full potential through clarity,
             confidence, and purposeful growth.
           </p>
