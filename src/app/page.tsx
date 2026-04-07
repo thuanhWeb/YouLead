@@ -6,13 +6,11 @@ const testimonials = [
     quote:
       "TA's coaching gave me practical direction and clarity I could actually act on. I left each session feeling more confident, focused, and supported.",
     name: "Client",
-    role: "",
   },
   {
     quote:
       "Working with TA helped me reconnect with myself and make decisions with more confidence. Her approach is warm, strategic, and deeply empowering.",
     name: "Client",
-    role: "",
   },
 ];
 
@@ -34,50 +32,27 @@ const services = [
   },
 ];
 
-const faqs = [
-  {
-    question: "Who do you work with?",
-    answer:
-      "Founders, leaders, and professionals who want clarity, stronger leadership, and aligned growth.",
-  },
-  {
-    question: "Do you offer online coaching?",
-    answer:
-      "Yes, sessions are available online (and in-person if/when available).",
-  },
-  {
-    question: "How long do clients usually work with you?",
-    answer:
-      "It depends on your goals. Some begin with a Clarity Intensive, others continue with ongoing coaching.",
-  },
-  {
-    question: "What if I'm not sure which offer fits?",
-    answer:
-      "Book a Clarity Call and we'll choose the best starting point together.",
-  },
-];
-
 export default function Home() {
   return (
     <>
       {/* ===== SECTION 1 — HERO (2-column: text left, image right) ===== */}
-      <section className="bg-forest py-24 sm:py-36">
+      <section className="bg-cream py-24 sm:py-36">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 md:grid-cols-2">
             <div>
-              <h1 className="font-heading text-3xl font-bold text-warm-white sm:text-4xl md:text-5xl lg:text-6xl">
+              <h1 className="font-heading text-3xl font-bold text-charcoal sm:text-4xl md:text-5xl lg:text-[3.5rem] lg:leading-[1.15]">
                 Lead with Clarity.
                 <br />
                 Grow in Alignment.
                 <br />
                 Thrive with Confidence.
               </h1>
-              <p className="mt-6 max-w-xl text-lg leading-relaxed text-warm-white/85 sm:text-xl">
+              <p className="mt-6 max-w-xl text-lg leading-relaxed text-charcoal/75 sm:text-xl">
                 Helping driven professionals, business owners, and leaders gain
                 clarity, act in alignment, and move forward with confidence and
                 structure. So they don&apos;t feel stretched in every direction.
               </p>
-              <p className="mt-4 max-w-xl text-sm leading-relaxed text-warm-white/60">
+              <p className="mt-4 max-w-xl text-sm leading-relaxed text-charcoal/50">
                 Inclusive, culturally aware coaching supporting diverse
                 professionals, including CALD women navigating confidence,
                 identity, and leadership transitions.
@@ -87,13 +62,13 @@ export default function Home() {
                   href="#contact"
                   className="inline-block rounded-lg bg-gold px-8 py-3 text-base font-semibold text-charcoal transition-colors hover:bg-gold-light"
                 >
-                  Book a Clarity Call
+                  Book a Free Clarity Call
                 </a>
                 <a
                   href="#lead-magnet"
-                  className="inline-block rounded-lg border border-warm-white/40 bg-warm-white/10 px-8 py-3 text-base font-semibold text-warm-white backdrop-blur-sm transition-colors hover:bg-warm-white/20"
+                  className="inline-block rounded-lg border border-charcoal/20 px-8 py-3 text-base font-semibold text-charcoal transition-colors hover:border-charcoal/40 hover:bg-charcoal/5"
                 >
-                  Take the Free Clarity Snapshot
+                  Download the Leadership Reset Guide
                 </a>
               </div>
             </div>
@@ -115,34 +90,25 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== TRUST STRIP (from Bloom Draft) ===== */}
-      <section className="border-b border-charcoal/5 bg-white py-6">
-        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
-          <p className="text-sm tracking-wide text-charcoal/50">
-            Trusted by growth-minded leaders, founders, and professionals
-            navigating change, growth, and reinvention.
-          </p>
-        </div>
-      </section>
-
-      {/* ===== SECTION 2 — CONNECTION (beige bg, large serif) ===== */}
+      {/* ===== SECTION 2 — CONNECTION (beige bg, large serif, 40-44px) ===== */}
       <FadeIn>
         <section className="bg-cream py-24 sm:py-36">
-          <div className="mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-[680px] px-4 text-center sm:px-6 lg:px-8">
             <p className="text-lg text-charcoal/70 sm:text-xl">
               You&apos;re capable. Responsible. The one people rely on.
             </p>
             <div className="mt-10 space-y-3">
-              <p className="font-heading text-3xl leading-snug tracking-wide text-charcoal sm:text-4xl lg:text-5xl">
+              <p className="font-heading text-[2.25rem] leading-snug tracking-wide text-charcoal sm:text-[2.5rem] lg:text-[2.75rem]">
                 You lead at work.
               </p>
-              <p className="font-heading text-3xl leading-snug tracking-wide text-charcoal sm:text-4xl lg:text-5xl">
+              <p className="font-heading text-[2.25rem] leading-snug tracking-wide text-charcoal sm:text-[2.5rem] lg:text-[2.75rem]">
                 You lead at home.
               </p>
-              <p className="font-heading text-3xl leading-snug tracking-wide text-charcoal sm:text-4xl lg:text-5xl">
+              <p className="font-heading text-[2.25rem] leading-snug tracking-wide text-charcoal sm:text-[2.5rem] lg:text-[2.75rem]">
                 And most of the time, you&apos;re holding more than anyone sees.
               </p>
             </div>
+            <div className="mx-auto mt-6 h-0.5 w-16 bg-gold/40" />
           </div>
         </section>
       </FadeIn>
@@ -150,7 +116,7 @@ export default function Home() {
       {/* ===== SECTION 3 — PROBLEM EXPANSION ===== */}
       <FadeIn>
         <section className="bg-white py-24 sm:py-36">
-          <div className="mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-[680px] px-4 text-center sm:px-6 lg:px-8">
             <div className="space-y-6 text-lg leading-relaxed text-charcoal/80">
               <p>
                 But behind the scenes, it can feel like a lot. You&apos;re making
@@ -213,7 +179,7 @@ export default function Home() {
       {/* ===== SECTION 4 — PHILOSOPHY (deep green bg, white text) ===== */}
       <FadeIn>
         <section className="bg-forest py-24 sm:py-36">
-          <div className="mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-[680px] px-4 text-center sm:px-6 lg:px-8">
             <h2 className="font-heading text-3xl font-bold text-warm-white sm:text-4xl">
               Leadership Starts From Within
             </h2>
@@ -229,14 +195,11 @@ export default function Home() {
 
       {/* ===== SECTION 5 — SERVICES (3 columns) — id="services" ===== */}
       <FadeIn>
-        <section id="services" className="scroll-mt-20 py-24 sm:py-36">
+        <section id="services" className="scroll-mt-20 bg-white py-24 sm:py-36">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <h2 className="text-center font-heading text-3xl font-bold text-charcoal sm:text-4xl">
-              How We Can Work Together
+              Coaching for Professionals &amp; Leaders
             </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-center text-charcoal/70">
-              Coaching programs designed to meet you where you are
-            </p>
 
             <div className="mt-14 grid gap-8 md:grid-cols-3">
               {services.map((service) => (
@@ -278,7 +241,7 @@ export default function Home() {
 
       {/* ===== SECTION 6 — ABOUT SNAPSHOT — id="about" ===== */}
       <FadeIn>
-        <section id="about" className="scroll-mt-20 py-24 sm:py-36">
+        <section id="about" className="scroll-mt-20 bg-cream py-24 sm:py-36">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <div className="grid items-start gap-12 md:grid-cols-2">
               {/* Photo */}
@@ -292,11 +255,17 @@ export default function Home() {
                 />
               </div>
 
-              {/* Bio — homepage short version from Content doc */}
+              {/* Bio */}
               <div>
-                <h2 className="font-heading text-3xl font-bold text-charcoal sm:text-4xl">
+                <p className="text-sm font-semibold uppercase tracking-widest text-gold">
                   Meet Your Coach
+                </p>
+                <h2 className="mt-3 font-heading text-3xl font-bold text-charcoal sm:text-4xl">
+                  Thu Anh Flynn
                 </h2>
+                <p className="mt-1 text-lg text-charcoal/60">
+                  Leadership &amp; Business Coach
+                </p>
                 <p className="mt-6 leading-relaxed text-charcoal/80">
                   I know what it&apos;s like to work hard and still feel unclear.
                 </p>
@@ -318,7 +287,7 @@ export default function Home() {
                     href="#services"
                     className="inline-flex items-center gap-1 text-sm font-semibold text-gold-dark transition-colors hover:text-gold"
                   >
-                    See My Journey
+                    Read My Story
                     <svg
                       className="h-4 w-4"
                       fill="none"
@@ -342,8 +311,8 @@ export default function Home() {
 
       {/* ===== SECTION 7 — VALUES (centered, minimal) ===== */}
       <FadeIn>
-        <section className="bg-cream py-24 sm:py-36">
-          <div className="mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8">
+        <section className="bg-white py-24 sm:py-36">
+          <div className="mx-auto max-w-[680px] px-4 text-center sm:px-6 lg:px-8">
             <div className="space-y-5">
               <p className="font-heading text-xl leading-relaxed tracking-wide text-charcoal sm:text-2xl">
                 Leadership begins within.
@@ -396,18 +365,15 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <p className="mt-8 text-center text-sm text-charcoal/40">
-              Names and roles will be added with client permission.
-            </p>
           </div>
         </section>
       </FadeIn>
 
       {/* ===== SECTION 9 — LEAD MAGNET (deep green bg) ===== */}
-      <section id="lead-magnet" className="bg-forest py-24 sm:py-36">
-        <div className="mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8">
+      <section id="lead-magnet" className="scroll-mt-20 bg-forest py-24 sm:py-36">
+        <div className="mx-auto max-w-[680px] px-4 text-center sm:px-6 lg:px-8">
           <h2 className="font-heading text-3xl font-bold text-warm-white sm:text-4xl">
-            Free Leadership Clarity Snapshot
+            Feeling stretched? Start here.
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-warm-white/80">
             Get a quick insight into how you currently approach decisions,
@@ -420,43 +386,19 @@ export default function Home() {
               href="#"
               className="inline-block rounded-lg bg-gold px-8 py-3 text-base font-semibold text-charcoal transition-colors hover:bg-gold-light"
             >
-              Get My Free Clarity Snapshot
+              Get the Free Guide
             </a>
           </div>
-          <p className="mt-8 text-warm-white/60">
-            Want to go deeper? Book a free Clarity Call and we&apos;ll walk
-            through your results together.
-          </p>
         </div>
       </section>
 
-      {/* ===== FAQ (cherry-picked from Bloom Draft) ===== */}
-      <FadeIn>
-        <section className="bg-white py-24 sm:py-36">
-          <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
-            <h2 className="text-center font-heading text-3xl font-bold text-charcoal sm:text-4xl">
-              Frequently Asked Questions
-            </h2>
-            <div className="mt-12 space-y-8">
-              {faqs.map((faq, index) => (
-                <div key={index}>
-                  <h3 className="font-heading text-lg font-semibold text-charcoal">
-                    {faq.question}
-                  </h3>
-                  <p className="mt-2 leading-relaxed text-charcoal/70">
-                    {faq.answer}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      </FadeIn>
-
-      {/* ===== SECTION 10 — FINAL CTA (white bg, minimal) ===== */}
-      <section className="bg-white py-24 sm:py-36">
-        <div className="mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8">
-          <p className="text-lg leading-relaxed text-charcoal/80">
+      {/* ===== SECTION 10 — FINAL CTA (white bg, minimal) — id="contact" ===== */}
+      <section id="contact" className="scroll-mt-20 bg-white py-24 sm:py-36">
+        <div className="mx-auto max-w-[680px] px-4 text-center sm:px-6 lg:px-8">
+          <h2 className="font-heading text-3xl font-bold text-charcoal sm:text-4xl">
+            Ready to lead with clarity?
+          </h2>
+          <p className="mt-6 text-lg leading-relaxed text-charcoal/70">
             You don&apos;t have to figure this out on your own. If you&apos;re
             ready for more clarity, stronger direction, and a way forward that
             actually feels aligned — let&apos;s map your next move together.
@@ -466,109 +408,11 @@ export default function Home() {
               href="#contact"
               className="inline-block rounded-lg bg-gold px-8 py-3 text-base font-semibold text-charcoal transition-colors hover:bg-gold-light focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2"
             >
-              Book a Clarity Call
+              Book Your Free Clarity Call
             </a>
           </div>
         </div>
       </section>
-
-      {/* ===== CONTACT — id="contact" ===== */}
-      <FadeIn>
-        <section id="contact" className="scroll-mt-20 bg-cream py-24 sm:py-36">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <h2 className="font-heading text-3xl font-bold text-charcoal sm:text-4xl">
-                Let&apos;s Get Clear
-              </h2>
-              <p className="mx-auto mt-4 max-w-2xl text-lg text-charcoal/70">
-                A focused conversation to help you step back, think clearly, and
-                map your next move with confidence.
-              </p>
-            </div>
-
-            <div className="mt-14 grid gap-8 md:grid-cols-2">
-              <div>
-                <h3 className="font-heading text-xl font-bold text-charcoal sm:text-2xl">
-                  Who This Is For
-                </h3>
-                <ul className="mt-4 space-y-3 text-charcoal/80">
-                  <li className="flex items-start gap-3">
-                    <span className="mt-1.5 block h-2 w-2 shrink-0 rounded-full bg-gold" />
-                    You feel stretched or pulled in too many directions
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="mt-1.5 block h-2 w-2 shrink-0 rounded-full bg-gold" />
-                    You&apos;re working hard but something still feels unclear
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="mt-1.5 block h-2 w-2 shrink-0 rounded-full bg-gold" />
-                    You&apos;re ready for your next step but unsure where to focus
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="mt-1.5 block h-2 w-2 shrink-0 rounded-full bg-gold" />
-                    You want clarity, not more noise
-                  </li>
-                </ul>
-
-                <h3 className="mt-10 font-heading text-xl font-bold text-charcoal sm:text-2xl">
-                  What We&apos;ll Do Together
-                </h3>
-                <ul className="mt-4 space-y-3 text-charcoal/80">
-                  <li className="flex items-start gap-3">
-                    <span className="mt-1.5 block h-2 w-2 shrink-0 rounded-full bg-gold" />
-                    Clarify where you are right now
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="mt-1.5 block h-2 w-2 shrink-0 rounded-full bg-gold" />
-                    Identify what&apos;s getting in your way
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="mt-1.5 block h-2 w-2 shrink-0 rounded-full bg-gold" />
-                    Explore what aligned growth looks like for you
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="mt-1.5 block h-2 w-2 shrink-0 rounded-full bg-gold" />
-                    Map your next step with more direction and confidence
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <div className="rounded-2xl border border-charcoal/10 bg-white p-8 sm:p-12">
-                  <h3 className="text-center font-heading text-xl font-bold text-charcoal sm:text-2xl">
-                    Book Your Call
-                  </h3>
-                  <p className="mt-2 text-center text-sm text-charcoal/70">
-                    Choose a time that works for you.
-                  </p>
-                  <div className="mt-8 flex flex-col items-center justify-center gap-4 text-charcoal/50">
-                    <svg
-                      className="h-16 w-16"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={1.5}
-                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
-                      />
-                    </svg>
-                    <p className="text-sm font-medium">
-                      Calendly scheduling widget will appear here
-                    </p>
-                  </div>
-                </div>
-                <p className="mt-6 text-center text-sm text-charcoal/50">
-                  There&apos;s no pressure and no obligation. You&apos;ll leave
-                  with clarity and direction either way.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </FadeIn>
     </>
   );
 }
