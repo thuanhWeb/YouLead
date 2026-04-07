@@ -66,7 +66,11 @@ export default function Home() {
           <div className="grid items-center gap-12 md:grid-cols-2">
             <div>
               <h1 className="font-heading text-4xl font-bold text-warm-white sm:text-5xl lg:text-6xl">
-                Lead with Clarity. Grow in Alignment. Thrive with Confidence.
+                Lead with Clarity.
+                <br />
+                Grow in Alignment.
+                <br />
+                Thrive with Confidence.
               </h1>
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-warm-white/85 sm:text-xl">
                 Helping driven professionals, business owners, and leaders gain
