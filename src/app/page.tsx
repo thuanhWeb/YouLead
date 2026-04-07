@@ -65,7 +65,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 md:grid-cols-2">
             <div>
-              <h1 className="font-heading text-4xl font-bold text-warm-white sm:text-5xl lg:text-6xl">
+              <h1 className="font-heading text-3xl font-bold text-warm-white sm:text-4xl md:text-5xl lg:text-6xl">
                 Lead with Clarity.
                 <br />
                 Grow in Alignment.

@@ -34,9 +34,10 @@ export function Footer() {
               <Image
                 src="/logo.png"
                 alt="You Lead Coaching"
-                width={48}
-                height={48}
+                width={200}
+                height={187}
                 className="h-12 w-auto brightness-0 invert"
+                unoptimized
               />
             </a>
             <p className="mt-3 text-sm text-warm-white/70">

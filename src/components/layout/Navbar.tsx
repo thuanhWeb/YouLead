@@ -84,9 +84,10 @@ export function Navbar() {
           <Image
             src="/logo.png"
             alt="You Lead Coaching"
-            width={48}
-            height={48}
+            width={200}
+            height={187}
             className="h-10 w-auto sm:h-12"
+            unoptimized
             priority
           />
         </a>
@@ -143,9 +144,10 @@ export function Navbar() {
                   <Image
                     src="/logo.png"
                     alt="You Lead Coaching"
-                    width={40}
-                    height={40}
+                    width={200}
+                    height={187}
                     className="h-10 w-auto"
+                    unoptimized
                   />
                 </SheetTitle>
               </SheetHeader>
