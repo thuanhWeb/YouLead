@@ -32,11 +32,11 @@ export function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
             <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}>
               <Image
-                src="/logo.svg"
+                src="/logo.png"
                 alt="You Lead Coaching"
-                width={140}
-                height={35}
-                className="h-8 w-auto brightness-0 invert"
+                width={48}
+                height={48}
+                className="h-12 w-auto brightness-0 invert"
               />
             </a>
             <p className="mt-3 text-sm text-warm-white/70">

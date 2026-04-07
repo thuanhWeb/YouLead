@@ -82,11 +82,11 @@ export function Navbar() {
           className="flex items-center gap-2"
         >
           <Image
-            src="/logo.svg"
+            src="/logo.png"
             alt="You Lead Coaching"
-            width={160}
-            height={40}
-            className="h-8 w-auto sm:h-10"
+            width={48}
+            height={48}
+            className="h-10 w-auto sm:h-12"
             priority
           />
         </a>
@@ -141,11 +141,11 @@ export function Navbar() {
               <SheetHeader>
                 <SheetTitle>
                   <Image
-                    src="/logo.svg"
+                    src="/logo.png"
                     alt="You Lead Coaching"
-                    width={140}
-                    height={35}
-                    className="h-8 w-auto"
+                    width={40}
+                    height={40}
+                    className="h-10 w-auto"
                   />
                 </SheetTitle>
               </SheetHeader>
