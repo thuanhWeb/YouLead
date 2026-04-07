@@ -1,0 +1,267 @@
+﻿Final Website Design Brief
+________________
+
+
+1. BRAND POSITIONING
+________________
+
+
+Core message:
+Clarity → Alignment → Confidence → Sustainable Growth
+Primary audience:
+Driven professionals, business owners, and leaders (30–45) who:
+* Carry high responsibility
+* Feel mentally stretched
+* Want clarity, structure, and aligned growth
+Brand tone:
+* Warm
+* Grounded
+* Calm authority
+* Human, not corporate
+* Strategic, not fluffy
+________________
+
+
+2. COLOUR SYSTEM (FINAL)
+Usage Ratios (Visual Balance)
+* Sand / Cream / White: 60–70%
+* Deep Forest Green: 15–20%
+* Gold: 8–12% (accents only)
+* Charcoal: remainder
+________________
+
+
+Colour Palette
+* Gold: #C6A75E
+* Deep Green: #1F3A2E
+* Beige: #F4EFE7
+* White: #FFFFFF
+* Optional Sage: #DCE3D9
+* Charcoal text: #2C2C2C
+________________
+
+
+Key Rule
+Gold is for accents only. Not backgrounds.
+Use gold for:
+* Buttons
+* Underlines
+* Highlights
+* Small icons
+________________
+
+
+3. TYPOGRAPHY
+Headings (Serif)
+* Playfair Display OR Cormorant Garamond
+* Elegant, spacious
+Body (Sans-serif)
+* Inter / Avenir / Helvetica Neue
+Style Rules
+* Generous spacing
+* No dense paragraphs
+* Strong hierarchy
+________________
+
+
+4. GLOBAL DESIGN PRINCIPLES
+* Clean, minimal layout
+* Large spacing (100–140px section padding)
+* Narrow text blocks (600–720px max)
+* No clutter
+* No heavy animation
+* Soft fade-in only
+________________
+
+
+5. HEADER / NAV BAR
+Background: White
+Logo: Gold (left aligned)
+Navigation (right):
+* About
+* Work With Me
+* Resources
+* Contact
+CTA button (top right):
+👉 Book a Clarity Call (gold button)
+________________
+
+
+6. HOMEPAGE STRUCTURE (FINAL COPY + DESIGN)
+________________
+
+
+SECTION 1 — HERO
+Layout: 2-column (text left, image right)
+Headline:
+Lead with Clarity. Grow in Alignment. Thrive with Confidence.
+Subheadline:
+Helping driven professionals, business owners, and leaders gain clarity, act in alignment, and move forward with confidence and structure.
+So they don’t feel stretched in every direction.
+Trust Line:
+Inclusive, culturally aware coaching supporting diverse professionals, including CALD women navigating confidence, identity, and leadership transitions.
+Buttons:
+* Primary: Gold → Book a Free Clarity Call
+* Secondary: Outline → Download the Leadership Reset Guide
+Image:
+* Natural light
+* Calm, grounded presence
+* No busy background
+________________
+
+
+SECTION 2 — CONNECTION (CRITICAL)
+Background: Beige (#F4EFE7)
+Centered, narrow layout
+Text:
+You’re capable. Responsible. The one people rely on.
+You lead at work.
+You lead at home.
+And most of the time, you’re holding more than anyone sees.
+________________
+
+
+Design:
+* Serif font
+* Large size (40–44px)
+* Strong spacing
+* Final line slightly emphasised
+* Optional gold underline
+👉 This section must create immediate emotional recognition
+________________
+
+
+SECTION 3 — PROBLEM EXPANSION
+Centered layout
+Copy:
+But behind the scenes, it can feel like a lot.
+You’re making decisions constantly.
+Carrying responsibility.
+Thinking about what’s next while managing what’s now.
+On paper, things look good.
+But internally, you might feel stretched, second-guessing, or pulled in too many directions.
+Between ambition, expectations, and the pace of life and business, it’s easy to lose alignment with what actually matters.
+Not because you’re not capable.
+But because you haven’t had the space to step back and think clearly.
+You don’t need another productivity hack.
+You don’t need to work harder.
+You need space to think.
+Structure to lead.
+And support to realign.
+________________
+
+
+Bullet Section:
+You might be here if:
+* You’re growing a business but feel scattered or low on energy
+* You’re leading others while quietly second-guessing yourself
+* You’re juggling work, family, and expectations with no space to think
+* You’re ready for your next level but unsure what to focus on first
+* You’ve built something meaningful but it no longer feels fully aligned
+________________
+
+
+SECTION 4 — PHILOSOPHY
+Background: Deep Green
+Text: White
+Headline:
+Leadership Starts From Within
+Points:
+* Clearer decisions
+* Calm communication
+* Stronger boundaries
+* Sustainable growth
+________________
+
+
+SECTION 5 — SERVICES
+3 columns
+Self-Leadership Coaching
+Clarity, confidence, direction
+Leadership Coaching
+Communication, influence, culture
+Business Coaching
+Strategy, structure, sustainability
+Each with:
+→ Learn More
+________________
+
+
+SECTION 6 — ABOUT SNAPSHOT
+Split layout
+Title:
+Thu Anh Flynn
+Leadership & Business Coach
+Copy:
+(Use final version we created)
+CTA:
+Read My Story
+________________
+
+
+SECTION 7 — VALUES
+Centered, minimal:
+Leadership begins within.
+Growth should feel sustainable.
+Success should align with your values.
+Strength and softness can coexist.
+________________
+
+
+SECTION 8 — TESTIMONIALS
+* Beige background
+* 2–3 testimonials
+* Gold quotation marks (subtle)
+________________
+
+
+SECTION 9 — LEAD MAGNET
+Background: Deep Green
+Headline:
+Feeling stretched? Start here.
+CTA:
+Get the Free Guide
+________________
+
+
+SECTION 10 — FINAL CTA
+Minimal white background
+Headline:
+Ready to lead with clarity?
+Button:
+Book Your Free Clarity Call
+________________
+
+
+FOOTER
+Background: Deep Green
+* Logo (white or gold variant)
+* Navigation
+* Contact
+Tagline:
+True leadership starts from within.
+________________
+
+
+7. INTERACTIONS
+* Fade-in on scroll
+* Button hover (slight darken)
+* No heavy animations
+________________
+
+
+8. WHAT TO AVOID
+❌ Gold backgrounds
+❌ Clutter
+❌ Dense paragraphs
+❌ Overuse of icons
+❌ Corporate stock images
+❌ Overly feminine / soft aesthetic
+________________
+
+
+9. FINAL DESIGN INTENT
+The site should feel like:
+* A calm, intelligent conversation
+* A trusted leadership advisor
+* A space where people can think clearly
